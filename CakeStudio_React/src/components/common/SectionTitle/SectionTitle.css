@@ -1,0 +1,35 @@
+.section-title {
+    text-align: center;
+    margin: 50px 0 35px;
+}
+
+.section-title-text {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    color: #2d2d2d;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+.divider-line {
+    width: 35px;
+    border-color: #f3c3d0 !important;
+}
+
+.divider-heart {
+    color: #ff5b84;
+    font-size: 16px !important;
+}
+
+.section-title-subtitle {
+    margin-top: 12px !important;
+    color: #666;
+    font-size: 15px !important;
+}

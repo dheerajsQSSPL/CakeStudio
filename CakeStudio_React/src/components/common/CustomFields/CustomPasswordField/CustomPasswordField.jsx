@@ -14,6 +14,8 @@ const CustomPasswordField = ({
   onChange,
   placeholder,
   name,
+  error = false,
+  helperText = "",
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -26,6 +28,8 @@ const CustomPasswordField = ({
       onChange={onChange}
       placeholder={placeholder}
       name={name}
+      error={error}
+      helperText={helperText}
       className="custom-password-field"
       slotProps={{
         input: {
