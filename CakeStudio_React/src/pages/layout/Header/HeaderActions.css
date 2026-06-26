@@ -1,0 +1,40 @@
+.header-actions {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.login-btn {
+
+    color: #333 !important;
+
+    border-color: #d9d9d9 !important;
+
+    text-transform: none !important;
+
+    font-weight: 500 !important;
+
+    height: 40px;
+
+}
+
+.cart-btn {
+
+    background: #ff5b84 !important;
+
+    text-transform: none !important;
+
+    font-weight: 500 !important;
+
+    height: 40px;
+
+}
+
+.cart-btn:hover {
+
+    background: #f04372 !important;
+
+}

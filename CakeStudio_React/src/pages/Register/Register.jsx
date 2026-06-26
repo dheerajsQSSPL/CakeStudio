@@ -1,13 +1,13 @@
 import { Box } from "@mui/material";
-import LoginComponent from "../../components/LoginComponent/LoginComponent";
+import RegisterComponent from "../../components/RegisterComponent/RegisterComponent";
 import { useNavigate, useParams } from "react-router-dom";
 
-export default function Login(props) {
+export default function Register(props) {
     const params = useParams()
     let navigate = useNavigate()
     return (
         <Box>
-            <LoginComponent
+            <RegisterComponent
                 {...props}
                 navigate={navigate}
                 id={params.id}

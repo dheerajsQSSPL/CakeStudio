@@ -1,0 +1,23 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-options {
+    margin: 10px 0 24px;
+}
+
+.register-options .MuiTypography-root {
+    font-size: 14px;
+}
+
+.login-text {
+    margin-top: 22px !important;
+    text-align: center;
+    color: #666;
+}
+
+.login-link {
+    color: #f05c78 !important;
+    font-weight: 600;
+}

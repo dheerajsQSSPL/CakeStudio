@@ -89,8 +89,6 @@ api.interceptors.response.use(
     }
 );
 
-
-
 class Service {
     login(method, value) {
         return api.post(method, value, {
@@ -98,6 +96,14 @@ class Service {
                 skipAuth: true
             }
         });
+    }
+
+    register(method, value) {
+        return api.post(method, value, {
+            headers: {
+                skipAuth: true
+            }
+        })
     }
 }
 
