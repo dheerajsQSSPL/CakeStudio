@@ -1,0 +1,411 @@
+2026-06-19 09:22:18.832 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:22:20.066 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:22:20.070 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:22:20.258 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:22:20.265 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:22:20.274 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:22:21.094 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:22:21.632 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 556.4047ms
+2026-06-19 09:22:21.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:22:21.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:22:21.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 40.4735ms
+2026-06-19 09:22:21.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 52.6856ms
+2026-06-19 09:22:21.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:22:21.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 166.2478ms
+2026-06-19 09:22:22.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:22:22.209 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:22:22.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 76.0425ms
+2026-06-19 09:22:27.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:22:27.940 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 23.3238ms
+2026-06-19 09:22:27.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:22:27.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:22:27.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:22:28.039 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 47.8668ms
+2026-06-19 09:22:28.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 66.5417ms
+2026-06-19 09:22:28.088 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.9901ms
+2026-06-19 09:22:28.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:22:28.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - null null
+2026-06-19 09:22:28.131 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:22:28.141 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 28.2041ms
+2026-06-19 09:22:28.147 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-19 09:22:28.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - 200 628 image/png 37.1159ms
+2026-06-19 09:22:28.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:22:28.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 7.2534ms
+2026-06-19 09:22:28.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:22:28.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:22:28.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:22:28.938 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 5.3425ms
+2026-06-19 09:22:28.942 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.954ms
+2026-06-19 09:22:28.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2869ms
+2026-06-19 09:22:29.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:22:29.023 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:22:29.035 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 30.915ms
+2026-06-19 09:23:32.498 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:23:32.730 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:23:32.732 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:23:32.803 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:23:32.806 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:23:32.808 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:23:33.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:23:33.410 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 201.0977ms
+2026-06-19 09:23:33.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:23:33.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:23:33.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 19.7729ms
+2026-06-19 09:23:33.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 21.1224ms
+2026-06-19 09:23:33.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:23:33.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.3001ms
+2026-06-19 09:23:33.689 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:23:33.755 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:23:33.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 87.2794ms
+2026-06-19 09:28:52.723 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:28:52.814 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:28:52.929 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/html; charset=utf-8 205.7902ms
+2026-06-19 09:28:52.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:28:52.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:28:52.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 8.6642ms
+2026-06-19 09:28:53.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.3532ms
+2026-06-19 09:28:53.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/favicon.ico - null null
+2026-06-19 09:28:53.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/favicon.ico - 404 0 null 291.6957ms
+2026-06-19 09:28:53.413 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7120/favicon.ico, Response status code: 404
+2026-06-19 09:32:09.614 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:32:10.232 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:32:10.239 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:32:10.567 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:32:10.582 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:32:10.591 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:32:10.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:32:11.340 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 584.3172ms
+2026-06-19 09:32:11.353 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:32:11.353 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:32:11.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 33.3958ms
+2026-06-19 09:32:11.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:32:11.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 65.7828ms
+2026-06-19 09:32:11.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.5328ms
+2026-06-19 09:32:11.736 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:32:11.795 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:32:11.811 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 75.6651ms
+2026-06-19 09:32:28.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:32:28.851 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/cakes" for actions - CakeStudio.API.Controllers.CakeController.GetAll (CakeStudio.API),CakeStudio.API.Controllers.CakeController.GetCakes (CakeStudio.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-19 09:32:28.923 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 500 null text/html; charset=utf-8 120.1197ms
+2026-06-19 09:32:28.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:32:28.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:32:28.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 33.8016ms
+2026-06-19 09:32:29.033 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.0181ms
+2026-06-19 09:34:06.280 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:34:06.951 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:34:06.964 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:34:07.388 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:34:07.397 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:34:07.402 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:34:07.540 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:34:08.200 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 682.8173ms
+2026-06-19 09:34:08.208 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:34:08.208 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:34:08.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 19.0437ms
+2026-06-19 09:34:08.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:34:08.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 44.471ms
+2026-06-19 09:34:08.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.5656ms
+2026-06-19 09:34:08.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:34:08.641 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.6154ms
+2026-06-19 09:34:26.017 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/webhooks/stripe - null 0
+2026-06-19 09:34:26.242 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.StripeWebhookController.Webhook (CakeStudio.API)'
+2026-06-19 09:34:26.310 +05:30 [INF] Route matched with {action = "Webhook", controller = "StripeWebhook"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Webhook() on controller CakeStudio.API.Controllers.StripeWebhookController (CakeStudio.API).
+2026-06-19 09:34:43.357 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-06-19 09:34:43.393 +05:30 [INF] Executed action CakeStudio.API.Controllers.StripeWebhookController.Webhook (CakeStudio.API) in 17068.8806ms
+2026-06-19 09:34:43.396 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.StripeWebhookController.Webhook (CakeStudio.API)'
+2026-06-19 09:34:43.400 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/webhooks/stripe - 400 null application/problem+json; charset=utf-8 17383.0424ms
+2026-06-19 09:35:40.111 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 129
+2026-06-19 09:35:40.213 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:35:40.248 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-19 09:35:56.213 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 15955.3485ms
+2026-06-19 09:35:56.221 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:35:56.250 +05:30 [ERR] Unhandled exception occurred
+System.InvalidOperationException: The [InverseProperty] attribute on property 'User.Cakes' is not valid. The property 'DeletedByNavigation' is not a valid navigation on the related type 'Cake'. Ensure that the property exists and is a valid reference or collection navigation.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.ConfigureInverseNavigation(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, IConventionEntityTypeBuilder targetEntityTypeBuilder, InversePropertyAttribute attribute)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.Process(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, Type targetClrType, InversePropertyAttribute attribute)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, Type targetClrType, InversePropertyAttribute attribute, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.NavigationAttributeConventionBase`1.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnEntityTypeAddedNode.Run(ConventionDispatcher dispatcher)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.DelayedConventionScope.Run(ConventionDispatcher dispatcher)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ConventionBatch.Run()
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ConventionBatch.Dispose()
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model..ctor(ConventionSet conventions, ModelDependencies modelDependencies, ModelConfiguration modelConfiguration)
+   at Microsoft.EntityFrameworkCore.ModelBuilder..ctor(ConventionSet conventions, ModelDependencies modelDependencies, ModelConfiguration modelConfiguration)
+   at Microsoft.EntityFrameworkCore.ModelConfigurationBuilder.CreateModelBuilder(ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at CakeStudio.Infrastructure.Repositories.UserRepository.GetByEmailAsync(String email) in C:\CakeStudio\backend\CakeStudio.Infrastructure\Repositories\UserRepository.cs:line 26
+   at CakeStudio.Infrastructure.Services.AuthService.RegisterAsync(RegisterRequestDto request) in C:\CakeStudio\backend\CakeStudio.Infrastructure\Services\AuthService.cs:line 41
+   at CakeStudio.API.Controllers.AuthController.Register(RegisterRequestDto request) in C:\CakeStudio\backend\CakeStudio.API\Controllers\AuthController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at CakeStudio.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\CakeStudio\backend\CakeStudio.API\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-06-19 09:35:56.405 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 500 null application/json 16293.8899ms
+2026-06-19 09:37:07.748 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:37:08.154 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:37:08.155 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:37:08.265 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:37:08.267 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:37:08.268 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:37:08.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:37:09.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 477.758ms
+2026-06-19 09:37:09.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:37:09.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:37:09.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 24.5551ms
+2026-06-19 09:37:09.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:37:09.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 50.3606ms
+2026-06-19 09:37:09.629 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.7868ms
+2026-06-19 09:37:09.772 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:37:09.819 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.5723ms
+2026-06-19 09:37:38.992 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 129
+2026-06-19 09:37:39.241 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:37:39.304 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-19 09:38:30.642 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 51320.6524ms
+2026-06-19 09:38:30.649 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:38:30.677 +05:30 [ERR] Unhandled exception occurred
+System.InvalidOperationException: The [InverseProperty] attribute on property 'User.Cakes' is not valid. The property 'DeletedByNavigation' is not a valid navigation on the related type 'Cake'. Ensure that the property exists and is a valid reference or collection navigation.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.ConfigureInverseNavigation(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, IConventionEntityTypeBuilder targetEntityTypeBuilder, InversePropertyAttribute attribute)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.Process(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, Type targetClrType, InversePropertyAttribute attribute)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.InversePropertyAttributeConvention.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, MemberInfo navigationMemberInfo, Type targetClrType, InversePropertyAttribute attribute, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.NavigationAttributeConventionBase`1.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnEntityTypeAddedNode.Run(ConventionDispatcher dispatcher)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.DelayedConventionScope.Run(ConventionDispatcher dispatcher)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ConventionBatch.Run()
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ConventionBatch.Dispose()
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model..ctor(ConventionSet conventions, ModelDependencies modelDependencies, ModelConfiguration modelConfiguration)
+   at Microsoft.EntityFrameworkCore.ModelBuilder..ctor(ConventionSet conventions, ModelDependencies modelDependencies, ModelConfiguration modelConfiguration)
+   at Microsoft.EntityFrameworkCore.ModelConfigurationBuilder.CreateModelBuilder(ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at CakeStudio.Infrastructure.Repositories.UserRepository.GetByEmailAsync(String email) in C:\CakeStudio\backend\CakeStudio.Infrastructure\Repositories\UserRepository.cs:line 26
+   at CakeStudio.Infrastructure.Services.AuthService.RegisterAsync(RegisterRequestDto request) in C:\CakeStudio\backend\CakeStudio.Infrastructure\Services\AuthService.cs:line 41
+   at CakeStudio.API.Controllers.AuthController.Register(RegisterRequestDto request) in C:\CakeStudio\backend\CakeStudio.API\Controllers\AuthController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at CakeStudio.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\CakeStudio\backend\CakeStudio.API\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-06-19 09:38:30.832 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 500 null application/json 51840.2095ms
+2026-06-19 09:45:41.627 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-19 09:45:41.999 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-19 09:45:42.002 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-19 09:45:42.128 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-19 09:45:42.133 +05:30 [INF] Hosting environment: Development
+2026-06-19 09:45:42.136 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-19 09:45:42.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-19 09:45:43.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 620.8258ms
+2026-06-19 09:45:43.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-19 09:45:43.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-19 09:45:43.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 23.7163ms
+2026-06-19 09:45:43.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-19 09:45:43.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 48.9568ms
+2026-06-19 09:45:43.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.7327ms
+2026-06-19 09:45:43.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-19 09:45:43.719 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.5338ms
+2026-06-19 09:45:52.338 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 129
+2026-06-19 09:45:52.569 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:45:52.616 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-19 09:45:59.926 +05:30 [INF] Executed DbCommand (123ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-19 09:46:00.386 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 255), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastName], [PasswordHash], [PhoneNumber], [Role], [UpdatedAt])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-06-19 09:46:05.062 +05:30 [INF] User dheeraj.s@qualitechgroup.in registered successfully
+2026-06-19 09:46:05.072 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-19 09:46:05.084 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 12454.6723ms
+2026-06-19 09:46:05.090 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-19 09:46:05.111 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 200 null application/json; charset=utf-8 12772.6244ms

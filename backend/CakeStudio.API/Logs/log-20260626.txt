@@ -1,0 +1,79 @@
+2026-06-26 11:25:33.258 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 11:25:34.234 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 11:25:34.238 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 11:25:34.408 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 11:25:34.410 +05:30 [INF] Hosting environment: Development
+2026-06-26 11:25:34.413 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 11:25:35.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 11:25:35.922 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 724.1737ms
+2026-06-26 11:25:35.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-26 11:25:35.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-26 11:25:35.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-26 11:25:36.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 47.1555ms
+2026-06-26 11:25:36.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 61.8823ms
+2026-06-26 11:25:36.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 171.6293ms
+2026-06-26 11:25:36.328 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-26 11:25:36.340 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - null null
+2026-06-26 11:25:36.392 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-26 11:25:36.401 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - 200 628 image/png 60.8522ms
+2026-06-26 11:25:36.414 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.3969ms
+2026-06-26 11:25:59.731 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 107
+2026-06-26 11:25:59.765 +05:30 [INF] CORS policy execution failed.
+2026-06-26 11:25:59.768 +05:30 [INF] Request origin https://localhost:7120 does not have permission to access the resource.
+2026-06-26 11:26:00.049 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 11:26:00.139 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 11:26:03.923 +05:30 [INF] Executed DbCommand (369ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 11:26:04.441 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 255), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastName], [PasswordHash], [PhoneNumber], [Role], [UpdatedAt])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-06-26 11:26:09.687 +05:30 [INF] User string@gmail.com registered successfully
+2026-06-26 11:26:09.704 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 11:26:09.745 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 9584.9654ms
+2026-06-26 11:26:09.751 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 11:26:09.771 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 200 null application/json; charset=utf-8 10040.6782ms
+2026-06-26 11:31:20.837 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 11:31:21.204 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 11:31:21.207 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 11:31:21.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 11:31:21.355 +05:30 [INF] Hosting environment: Development
+2026-06-26 11:31:21.358 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 11:31:21.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 11:31:22.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 531.966ms
+2026-06-26 11:31:22.229 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-26 11:31:22.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-26 11:31:22.258 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 30.2611ms
+2026-06-26 11:31:22.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-26 11:31:22.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 62.0496ms
+2026-06-26 11:31:22.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.9963ms
+2026-06-26 11:31:22.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-26 11:31:22.724 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.1296ms
+2026-06-26 11:31:57.099 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 57
+2026-06-26 11:31:57.132 +05:30 [INF] CORS policy execution failed.
+2026-06-26 11:31:57.134 +05:30 [INF] Request origin https://localhost:7120 does not have permission to access the resource.
+2026-06-26 11:31:57.348 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-26 11:31:57.401 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 11:32:00.528 +05:30 [INF] Executed DbCommand (198ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 11:32:01.016 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedAt], [r].[ExpiryDate], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__userId_0
+2026-06-26 11:32:01.202 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 500), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ExpiryDate], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2, @p3);
+2026-06-26 11:32:01.234 +05:30 [INF] User string@gmail.com logged in successfully
+2026-06-26 11:32:01.247 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-26 11:32:01.258 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 3851.1461ms
+2026-06-26 11:32:01.262 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-26 11:32:01.280 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 200 null application/json; charset=utf-8 4181.0274ms

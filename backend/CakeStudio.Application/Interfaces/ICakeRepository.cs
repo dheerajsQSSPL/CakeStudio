@@ -1,0 +1,21 @@
+﻿
+
+using CakeStudio.Application.DTOs.Cake;
+using CakeStudio.Persistence.Entities;
+
+namespace CakeStudio.Application.Interfaces
+{
+    public interface ICakeRepository
+    {
+        Task<Cake> AddAsync(Cake cake);
+
+        Task<Cake?> GetByIdAsync(int id);
+
+        Task<List<Cake>> GetAllAsync();
+
+        Task UpdateAsync(Cake cake);
+
+        Task DeleteAsync(Cake cake);
+        Task<PagedResult<Cake>> GetPagedCakesAsync(CakeFilterRequestDto request);
+    }
+}

@@ -1,0 +1,28 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.login-options .MuiFormControlLabel-label {
+  font-size: 14px;
+}
+
+.register-text {
+  margin-top: 24px !important;
+  text-align: center;
+  color: #666;
+  font-size: 15px !important;
+}
+
+.register-link {
+  color: #f05c78 !important;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,186 @@
+2026-06-25 14:48:55.353 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-25 14:48:56.575 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-25 14:48:56.579 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-25 14:48:56.791 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-25 14:48:56.794 +05:30 [INF] Hosting environment: Development
+2026-06-25 14:48:56.796 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-25 14:48:58.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-25 14:48:59.263 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 1057.6597ms
+2026-06-25 14:48:59.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-25 14:48:59.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-25 14:48:59.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-25 14:48:59.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 16.4858ms
+2026-06-25 14:48:59.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 33.4399ms
+2026-06-25 14:48:59.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 179.0241ms
+2026-06-25 14:48:59.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-25 14:48:59.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.8565ms
+2026-06-25 14:49:54.884 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 104
+2026-06-25 14:49:55.232 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-25 14:49:55.310 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 14:49:59.315 +05:30 [INF] Executed DbCommand (542ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 14:49:59.843 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 255), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastName], [PasswordHash], [PhoneNumber], [Role], [UpdatedAt])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-06-25 14:50:05.827 +05:30 [INF] User an@gmail.com registered successfully
+2026-06-25 14:50:05.862 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-25 14:50:05.894 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 10568.6549ms
+2026-06-25 14:50:05.902 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-25 14:50:05.932 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 200 null application/json; charset=utf-8 11047.7546ms
+2026-06-25 14:52:35.280 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 14:52:35.293 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-06-25 14:52:35.300 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-06-25 14:52:35.307 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 405 0 null 58.0772ms
+2026-06-25 14:55:22.380 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 14:55:22.405 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-06-25 14:55:22.406 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-06-25 14:55:22.408 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 405 0 null 28.8707ms
+2026-06-25 14:59:39.782 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-25 14:59:40.303 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-25 14:59:40.307 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-25 14:59:40.536 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-25 14:59:40.538 +05:30 [INF] Hosting environment: Development
+2026-06-25 14:59:40.541 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-25 14:59:41.420 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-25 14:59:41.983 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 572.7626ms
+2026-06-25 14:59:42.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-25 14:59:42.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 11.6415ms
+2026-06-25 14:59:42.088 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-25 14:59:42.098 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-25 14:59:42.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 58.0381ms
+2026-06-25 14:59:42.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 127.8409ms
+2026-06-25 14:59:42.882 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-25 14:59:42.944 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.2744ms
+2026-06-25 15:00:24.056 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 54
+2026-06-25 15:00:24.088 +05:30 [INF] CORS policy execution failed.
+2026-06-25 15:00:24.091 +05:30 [INF] Request origin https://localhost:7120 does not have permission to access the resource.
+2026-06-25 15:00:24.290 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 15:00:24.333 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 15:00:31.732 +05:30 [INF] Executed DbCommand (143ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 15:00:32.245 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedAt], [r].[ExpiryDate], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__userId_0
+2026-06-25 15:00:32.521 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 500), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ExpiryDate], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2, @p3);
+2026-06-25 15:00:32.561 +05:30 [INF] User an@gmail.com logged in successfully
+2026-06-25 15:00:32.582 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 15:00:32.595 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 8254.5191ms
+2026-06-25 15:00:32.597 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 15:00:32.688 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 200 null application/json; charset=utf-8 8632.812ms
+2026-06-25 15:01:03.027 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 15:01:03.045 +05:30 [INF] CORS policy execution successful.
+2026-06-25 15:01:03.053 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 204 null null 26.8919ms
+2026-06-25 15:01:03.058 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 45
+2026-06-25 15:01:03.105 +05:30 [INF] CORS policy execution successful.
+2026-06-25 15:01:03.109 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 15:01:03.114 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 15:01:31.410 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 15:01:31.425 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedAt], [r].[ExpiryDate], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__userId_0
+2026-06-25 15:01:31.509 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 500), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [RefreshTokens]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [RefreshTokens] ([ExpiryDate], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p1, @p2, @p3, @p4);
+2026-06-25 15:01:31.545 +05:30 [INF] User an@gmail.com logged in successfully
+2026-06-25 15:01:31.551 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 15:01:31.558 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 28440.2306ms
+2026-06-25 15:01:31.566 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 15:01:31.569 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 200 null application/json; charset=utf-8 28511.3209ms
+2026-06-25 15:59:53.138 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 15:59:53.148 +05:30 [INF] CORS policy execution successful.
+2026-06-25 15:59:53.151 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 204 null null 13.0236ms
+2026-06-25 15:59:53.154 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 62
+2026-06-25 15:59:53.167 +05:30 [INF] CORS policy execution successful.
+2026-06-25 15:59:53.177 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 15:59:53.180 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 16:00:01.596 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 16:00:01.608 +05:30 [WRN] Failed login attempt for dheerudheerajs517@gmail.com
+2026-06-25 16:00:01.616 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 16:00:01.691 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 8505.0304ms
+2026-06-25 16:00:01.714 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:00:01.734 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 401 null application/json; charset=utf-8 8580.4224ms
+2026-06-25 16:00:23.596 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 16:00:23.614 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:00:23.620 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 204 null null 23.9304ms
+2026-06-25 16:00:23.624 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 62
+2026-06-25 16:00:23.640 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:00:23.642 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:00:23.645 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 16:00:23.680 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 16:00:23.689 +05:30 [WRN] Failed login attempt for dheerudheerajs517@gmail.com
+2026-06-25 16:00:23.692 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 16:00:23.697 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 43.0239ms
+2026-06-25 16:00:23.703 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:00:23.707 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 401 null application/json; charset=utf-8 83.0912ms
+2026-06-25 16:01:15.937 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 16:01:15.954 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:01:15.957 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 204 null null 52.9878ms
+2026-06-25 16:01:15.993 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 45
+2026-06-25 16:01:16.007 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:01:16.010 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:01:16.013 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 16:01:16.041 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 16:01:16.056 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedAt], [r].[ExpiryDate], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[UserId] = @__userId_0
+2026-06-25 16:01:16.088 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 500), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [RefreshTokens]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [RefreshTokens] ([ExpiryDate], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p1, @p2, @p3, @p4);
+2026-06-25 16:01:16.099 +05:30 [INF] User an@gmail.com logged in successfully
+2026-06-25 16:01:35.365 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 16:01:35.369 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 19351.6907ms
+2026-06-25 16:01:35.376 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:01:35.381 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 200 null application/json; charset=utf-8 19388.1168ms
+2026-06-25 16:01:46.438 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - null null
+2026-06-25 16:01:46.451 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:01:46.469 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/login - 204 null null 30.9834ms
+2026-06-25 16:01:46.474 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/login - application/json 60
+2026-06-25 16:01:46.497 +05:30 [INF] CORS policy execution successful.
+2026-06-25 16:01:46.502 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:01:46.507 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CakeStudio.Application.DTOs.Auth.LoginRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-25 16:01:46.524 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-25 16:01:46.540 +05:30 [WRN] Failed login attempt for dheerudheerajs517@gmail.com
+2026-06-25 16:01:46.543 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.LoginResponseDto'.
+2026-06-25 16:01:46.546 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 34.9907ms
+2026-06-25 16:01:46.549 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
+2026-06-25 16:01:46.552 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 401 null application/json; charset=utf-8 78.4231ms

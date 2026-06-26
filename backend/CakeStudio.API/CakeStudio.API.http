@@ -1,0 +1,6 @@
+@CakeStudio.API_HostAddress = http://localhost:5004
+
+GET {{CakeStudio.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

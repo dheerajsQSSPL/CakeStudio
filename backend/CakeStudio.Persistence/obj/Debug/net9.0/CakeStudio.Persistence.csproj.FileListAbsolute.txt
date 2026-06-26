@@ -1,0 +1,17 @@
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Persistence.deps.json
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Persistence.runtimeconfig.json
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Persistence.dll
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Persistence.pdb
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Domain.dll
+C:\CakeStudio\backend\CakeStudio.Persistence\bin\Debug\net9.0\CakeStudio.Domain.pdb
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.csproj.AssemblyReference.cache
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.AssemblyInfoInputs.cache
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.AssemblyInfo.cs
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.csproj.CoreCompileInputs.cache
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStud.FF09BD3E.Up2Date
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.dll
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\refint\CakeStudio.Persistence.dll
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.pdb
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\CakeStudio.Persistence.genruntimeconfig.cache
+C:\CakeStudio\backend\CakeStudio.Persistence\obj\Debug\net9.0\ref\CakeStudio.Persistence.dll

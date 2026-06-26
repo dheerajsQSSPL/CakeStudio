@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server=QGINDELT37;Database=CakeStudioDb;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities.models -ContextDir DbContexts.models -Context CakeStudioDbContext -DataAnnotations -Force

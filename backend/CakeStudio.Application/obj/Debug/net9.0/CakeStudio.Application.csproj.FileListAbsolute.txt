@@ -1,0 +1,17 @@
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Application.deps.json
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Application.dll
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Application.pdb
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Domain.dll
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Persistence.dll
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Domain.pdb
+C:\CakeStudio\backend\CakeStudio.Application\bin\Debug\net9.0\CakeStudio.Persistence.pdb
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.csproj.AssemblyReference.cache
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.AssemblyInfoInputs.cache
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.AssemblyInfo.cs
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.csproj.CoreCompileInputs.cache
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStud.2A445DAB.Up2Date
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.dll
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\refint\CakeStudio.Application.dll
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\CakeStudio.Application.pdb
+C:\CakeStudio\backend\CakeStudio.Application\obj\Debug\net9.0\ref\CakeStudio.Application.dll

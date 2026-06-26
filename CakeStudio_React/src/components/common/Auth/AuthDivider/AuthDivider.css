@@ -1,0 +1,18 @@
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.auth-divider-line {
+  flex: 1;
+}
+
+.auth-divider-text {
+  color: #6b6b6b;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+C:\CakeStudio\backend\CakeStudio.Domain\bin\Debug\net9.0\CakeStudio.Domain.deps.json
+C:\CakeStudio\backend\CakeStudio.Domain\bin\Debug\net9.0\CakeStudio.Domain.dll
+C:\CakeStudio\backend\CakeStudio.Domain\bin\Debug\net9.0\CakeStudio.Domain.pdb
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.AssemblyInfoInputs.cache
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.AssemblyInfo.cs
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.csproj.CoreCompileInputs.cache
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.dll
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\refint\CakeStudio.Domain.dll
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\CakeStudio.Domain.pdb
+C:\CakeStudio\backend\CakeStudio.Domain\obj\Debug\net9.0\ref\CakeStudio.Domain.dll

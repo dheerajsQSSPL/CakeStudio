@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DbContextsg\**" />
+    <Compile Remove="Entitieccs\**" />
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="DbContextsg\**" />
+    <EmbeddedResource Remove="Entitieccs\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="DbContextsg\**" />
+    <None Remove="Entitieccs\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CakeStudio.Domain\CakeStudio.Domain.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Configurations\" />
+		
+	<Folder Include="DbContext\" />
+	</ItemGroup>
+</Project>
