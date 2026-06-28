@@ -1,0 +1,75 @@
+.occasion-card{
+
+    border-radius:14px!important;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08)!important;
+
+}
+
+.occasion-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15)!important;
+
+}
+
+.occasion-image{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.occasion-content{
+
+    text-align:center;
+
+}
+
+.occasion-title{
+
+    font-size:18px!important;
+
+    font-weight:700!important;
+
+    color:#2d2d2d;
+
+}
+
+.occasion-count{
+
+    margin:8px 0 16px!important;
+
+    color:#ff5b84;
+
+    font-size:14px!important;
+
+}
+
+.occasion-btn{
+
+    width:100%;
+
+    text-transform:none!important;
+
+    border-color:#ff5b84!important;
+
+    color:#ff5b84!important;
+
+    font-weight:600!important;
+
+}
+
+.occasion-btn:hover{
+
+    background:#fff5f7!important;
+
+}

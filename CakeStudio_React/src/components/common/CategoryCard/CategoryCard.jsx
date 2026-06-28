@@ -10,9 +10,10 @@ import {
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import "./CategoryCard.css";
+import { useNavigate } from "react-router-dom";
 
 const CategoryCard = ({ category }) => {
-
+    const navigate = useNavigate()
     return (
 
         <Card className="category-card">
@@ -37,6 +38,9 @@ const CategoryCard = ({ category }) => {
                     <Link
                         underline="none"
                         className="category-link"
+                        onClick={() =>
+                            navigate(`/cakes?category=${encodeURIComponent(category.name)}`)
+                        }
                     >
                         Explore Cakes
                     </Link>

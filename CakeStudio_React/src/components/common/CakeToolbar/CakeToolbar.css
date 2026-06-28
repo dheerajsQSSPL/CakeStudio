@@ -1,0 +1,65 @@
+.cake-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+
+}
+
+.cake-toolbar-title {
+
+    font-size: 34px !important;
+
+    font-weight: 700 !important;
+
+    color: #2d2d2d;
+
+}
+
+.cake-toolbar-subtitle {
+
+    margin-top: 6px !important;
+
+    color: #777;
+
+    font-size: 15px !important;
+
+}
+
+.cake-toolbar-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+.cake-toolbar .MuiOutlinedInput-root {
+
+    min-width: 150px;
+
+    border-radius: 8px;
+
+}
+
+.cake-toolbar .MuiToggleButton-root {
+
+    width: 42px;
+
+    height: 42px;
+
+}
+
+.cake-toolbar .Mui-selected {
+
+    background: #ff5b84 !important;
+
+    color: #fff !important;
+
+}

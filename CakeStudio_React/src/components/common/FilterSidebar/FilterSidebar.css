@@ -1,0 +1,25 @@
+.filter-sidebar{
+
+    padding:24px;
+
+    border:1px solid #ececec;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    position:sticky;
+
+    top:20px;
+}
+
+.filter-title{
+
+    font-size:24px!important;
+
+    font-weight:700!important;
+
+    color:#ff5b84;
+
+    margin-bottom:12px!important;
+}

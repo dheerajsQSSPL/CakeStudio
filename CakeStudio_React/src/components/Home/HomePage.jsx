@@ -5,6 +5,10 @@ import CategoryCard from "../common/CategoryCard/CategoryCard";
 import { categories } from "../../constants/categoryData"
 import './homepage.css'
 import SectionTitle from "../common/SectionTitle/SectionTitle";
+import CakeCard from "../common/CakeCard/CakeCard";
+import { cakes } from "../../constants/cakeData"
+import { features } from "../../constants/featureData";
+import FeatureCard from "../common/FeatureCard/FeatureCard";
 
 const HomePage = () => {
 
@@ -19,8 +23,8 @@ const HomePage = () => {
                 <Grid
                     container
                     spacing={4}
-                    justifyContent="center"
-                    alignItems="stretch"
+                    justifycontent="center"
+                    alignitems="stretch"
                 >
                     {categories.map((category) => (
                         <Grid
@@ -34,8 +38,67 @@ const HomePage = () => {
             </Box>
             <SectionTitle
                 title="Popular Cakes"
-                //subtitle="Our customers' favorite handcrafted cakes."
+            //subtitle="Our customers' favorite handcrafted cakes."
             />
+            <Grid
+                container
+                spacing={6}
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+            >
+
+                {cakes.map((cake) => (
+
+                    <Grid key={cake.id}>
+
+                        <CakeCard
+                            image={cake.image}
+                            name={cake.name}
+                            rating={cake.rating}
+                            reviews={cake.reviews}
+                            price={cake.price}
+                            favourite={cake.favourite}
+                        />
+
+                    </Grid>
+
+                ))}
+
+            </Grid>
+            <Box
+                sx={{
+                    // maxWidth: "1400px",
+                    // width:"100%",
+                    mx: "auto",
+                    paddingTop:5
+                }}
+            >
+                <Box className="feature-section">
+
+                    <Grid
+                        container
+                        justifyContent="space-between"
+                        alignItems="center"
+                    >
+
+                        {features.map((feature) => (
+
+                            <Grid
+                                key={feature.id}
+                                size={{ xs: 12, md: 3 }}
+                            >
+                                <FeatureCard feature={feature} />
+                            </Grid>
+
+                        ))}
+
+                    </Grid>
+
+                </Box>
+            </Box>
         </>
     );
 };

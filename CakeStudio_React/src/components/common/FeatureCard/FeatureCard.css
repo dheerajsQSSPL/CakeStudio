@@ -1,0 +1,38 @@
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: #fff1f5;
+
+    color: #ff5b84;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.feature-title {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    color: #2d2d2d;
+}
+
+.feature-description {
+    margin-top: 4px !important;
+
+    font-size: 14px !important;
+
+    color: #777;
+
+    line-height: 1.5;
+}

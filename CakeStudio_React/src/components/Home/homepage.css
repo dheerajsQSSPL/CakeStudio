@@ -3,3 +3,14 @@
     margin: 0 auto;
     padding: 10px 20px;
 }
+
+.feature-section {
+    /* width: 100%; */
+
+    padding: 28px 60px;
+
+    border-top: 1px solid #f2e4e8;
+    border-bottom: 1px solid #f2e4e8;
+
+    background: #FEF5F6;
+}

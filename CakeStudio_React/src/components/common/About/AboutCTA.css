@@ -1,0 +1,99 @@
+.about-cta{
+
+    margin-top:80px;
+
+    background:linear-gradient(
+        90deg,
+        #fff5f7 0%,
+        #fff0f4 100%
+    );
+
+    border:1px solid #fde1e8;
+
+    border-radius:18px;
+
+    padding:22px 30px;
+
+    overflow:hidden;
+
+}
+
+.cta-cake{
+
+    width:180px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+.cta-title{
+
+    font-size:28px!important;
+
+    font-weight:700!important;
+
+    color:#2d2d2d;
+
+    margin-bottom:12px!important;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.cta-description{
+
+    font-size:15px!important;
+
+    color:#666;
+
+    margin-bottom:22px!important;
+
+    line-height:1.8!important;
+
+}
+
+.cta-right{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.cta-outline{
+
+    width:130px;
+
+    opacity:.18;
+
+}
+
+@media(max-width:900px){
+
+    .about-cta{
+
+        text-align:center;
+
+        padding:30px 20px;
+
+    }
+
+    .cta-right{
+
+        justify-content:center;
+
+        margin-top:20px;
+
+    }
+
+    .cta-cake{
+
+        width:160px;
+
+        margin-bottom:20px;
+
+    }
+
+}

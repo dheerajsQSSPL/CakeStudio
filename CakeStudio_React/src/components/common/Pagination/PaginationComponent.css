@@ -1,0 +1,35 @@
+.pagination-container {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.pagination-text {
+
+    color: #666;
+
+    font-size: 15px !important;
+
+}
+
+.pagination .MuiPaginationItem-root {
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+}
+
+.pagination .Mui-selected {
+
+    background: #ff5b84 !important;
+
+    color: white !important;
+
+}
