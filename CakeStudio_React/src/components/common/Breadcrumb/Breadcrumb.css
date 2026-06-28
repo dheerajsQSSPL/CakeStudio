@@ -1,0 +1,18 @@
+.breadcrumb {
+    margin: 24px 0;
+}
+
+.breadcrumb-link {
+    color: #666 !important;
+    font-size: 14px !important;
+}
+
+.breadcrumb-link:hover {
+    color: #ff5b84 !important;
+}
+
+.breadcrumb-current {
+    color: #222 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}

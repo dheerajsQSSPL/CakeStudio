@@ -1,0 +1,121 @@
+.cake-card {
+
+    width: 270px;
+
+    border-radius: 12px !important;
+
+    transition: .3s;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08)!important;
+
+}
+
+.cake-card:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15)!important;
+
+}
+
+.cake-image-container{
+
+    position:relative;
+
+}
+
+.cake-image{
+
+    height:210px;
+
+    object-fit:cover;
+
+}
+
+.favorite-btn{
+
+    position:absolute!important;
+
+    top:10px;
+
+    right:10px;
+
+    background:white!important;
+
+    width:34px;
+
+    height:34px;
+
+}
+
+.favorite-btn:hover{
+
+    background:#fff!important;
+
+}
+
+.cake-name{
+
+    font-size:16px!important;
+
+    font-weight:600!important;
+
+    margin-bottom:8px!important;
+
+    color:#333;
+
+}
+
+.rating-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:12px;
+
+}
+
+.review-count{
+
+    color:#777;
+
+    font-size:13px!important;
+
+}
+
+.cake-price{
+
+    font-size:20px!important;
+
+    font-weight:700!important;
+
+    color:#111;
+
+    margin-bottom:18px!important;
+
+}
+
+.add-cart-btn{
+
+    border-color:#ff5b84!important;
+
+    color:#ff5b84!important;
+
+    text-transform:none!important;
+
+    font-weight:600!important;
+
+}
+
+.add-cart-btn:hover{
+
+    background:#fff5f7!important;
+
+}
