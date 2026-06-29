@@ -27,6 +27,7 @@ const CakeGrid = ({
                 >
 
                     <CakeCard
+                        id={cake.id}
                         image={cake.image}
                         name={cake.name}
                         rating={cake.rating}

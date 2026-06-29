@@ -1,0 +1,55 @@
+.empty-orders{
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    border:2px dashed #f4dbe2;
+
+    border-radius:20px;
+
+    background:#fffafb;
+
+}
+
+.empty-icon{
+
+    font-size:80px !important;
+
+    color:#ff5b84;
+
+}
+
+.empty-title{
+
+    font-size:30px !important;
+
+    font-weight:700 !important;
+
+    margin:20px 0 10px !important;
+
+}
+
+.empty-description{
+
+    max-width:450px;
+
+    margin:auto !important;
+
+    color:#777;
+
+    line-height:1.8;
+
+}
+
+.shop-button{
+
+    margin-top:30px !important;
+
+    height:50px;
+
+    padding:0 28px !important;
+
+    border-radius:12px !important;
+
+}

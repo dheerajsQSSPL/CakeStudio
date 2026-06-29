@@ -9,6 +9,16 @@ import Login from "../pages/Login/Login";
 import Occasions from "../pages/Ocassions/Ocassion";
 import OccasionList from "../pages/Ocassions/OcassionList";
 import Offers from "../pages/Offers/Offers";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import Cart from "../pages/Cart/Cart"
+import Checkout from "../pages/Checkout/Checkout"
+import OrderSuccess from "../pages/OrderSuccess/OrderSuccess";
+import NotFound from "../pages/NotFound/NotFound";
+import MyAccounts from "../pages/MyAccount/MyAccounts";
+import Order from "../pages/MyAccount/Order";
+import OrderDetail from "../pages/MyAccount/OrderDetail";
+import Address from "../pages/MyAccount/Address";
+import Wishlists from "../pages/MyAccount/Wishlists";
 
 const route = [
     { path: '/login', name: 'LogIn', component: Login, element: Login },
@@ -22,6 +32,18 @@ const route = [
     { path: '/offers', name: 'Offers', component: Offers, element: Offers },
     { path: '/about', name: 'About', component: About, element: About },
     { path: '/contact', name: 'Contact', component: Contact, element: Contact },
-]
+    { path: '/product/:id', name: 'ProductDetails', component: ProductDetails, element: ProductDetails },
+    { path: '/cart', name: 'Cart', component: Cart, element: Cart },
+    { path: '/checkout', name: 'Checkout', component: Checkout, element: Checkout },
+    { path: '/ordersuccess/:orderId', name: 'OrderSuccess', component: OrderSuccess, element: OrderSuccess },
 
+    { path: '/my-account', name: 'MyAccount', component: MyAccounts, element: MyAccounts },
+    { path: '/my-account/orders', name: 'OrdersList', component: Order, element: Order },
+    { path: '/my-account/orders/:orderId', name: 'OrdersDetails', component: OrderDetail, element: OrderDetail },
+    { path: '/my-account/addresses', name: 'Address', component: Address, element: Address },
+    { path: '/my-account/wishlist', name: 'Wishlists', component: Wishlists, element: Wishlists },
+
+    // Always keep this last
+    { path: "*", component: NotFound }
+]
 export default route;

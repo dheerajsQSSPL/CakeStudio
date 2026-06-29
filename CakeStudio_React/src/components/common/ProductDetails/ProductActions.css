@@ -1,0 +1,49 @@
+.product-actions{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.product-actions button{
+
+    flex:1;
+
+    min-width:180px;
+
+    height:52px;
+
+}
+
+.wishlist-button{
+
+    background:#fff!important;
+
+    color:#ff5b84!important;
+
+    border:1px solid #ff5b84!important;
+
+}
+
+.wishlist-button:hover{
+
+    background:#fff5f8!important;
+
+}
+
+.buy-now-button{
+
+    background:#2d2d2d!important;
+
+}
+
+.buy-now-button:hover{
+
+    background:#1d1d1d!important;
+
+}

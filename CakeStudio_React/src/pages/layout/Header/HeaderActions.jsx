@@ -7,9 +7,16 @@ import {
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import useCart from "../../../hooks/useCart"
 import "./HeaderActions.css";
 
 const HeaderActions = () => {
+
+    const navigate = useNavigate();
+
+    const { cartCount } = useCart();
 
     return (
 
@@ -19,21 +26,23 @@ const HeaderActions = () => {
                 variant="outlined"
                 startIcon={<PersonOutlineOutlinedIcon />}
                 className="login-btn"
+                onClick={() => navigate("/login")}
             >
                 Login
             </Button>
 
             <Button
                 variant="contained"
+                className="cart-btn"
                 startIcon={
                     <Badge
-                        badgeContent={2}
+                        badgeContent={cartCount}
                         color="error"
                     >
                         <ShoppingCartOutlinedIcon />
                     </Badge>
                 }
-                className="cart-btn"
+                onClick={() => navigate("/cart")}
             >
                 Cart
             </Button>

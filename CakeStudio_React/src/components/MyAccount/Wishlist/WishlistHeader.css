@@ -1,0 +1,143 @@
+.wishlist-header{
+
+    margin-bottom:30px;
+
+}
+
+.wishlist-title{
+
+    display:flex !important;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:34px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+}
+
+.wishlist-heart{
+
+    color:#ff5b84;
+
+    font-size:30px !important;
+
+}
+
+.wishlist-subtitle{
+
+    margin-top:8px !important;
+
+    color:#777;
+
+    margin-bottom:28px !important;
+
+}
+
+.share-btn{
+
+    float:right;
+
+    margin-top:-70px !important;
+
+    border-color:#ff5b84 !important;
+
+    color:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    font-weight:600 !important;
+
+}
+
+.share-btn:hover{
+
+    background:#fff3f7;
+
+}
+
+.wishlist-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 24px;
+
+    border:1px solid #f3dce3;
+
+    border-radius:16px;
+
+    background:#fff;
+
+}
+
+.wishlist-count{
+
+    font-weight:600 !important;
+
+    color:#444;
+
+}
+
+.sort-section{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.sort-section .MuiOutlinedInput-root{
+
+    border-radius:10px;
+
+}
+
+@media(max-width:768px){
+
+    .share-btn{
+
+        float:none;
+
+        margin-top:20px !important;
+
+        width:100%;
+
+    }
+
+    .wishlist-toolbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .sort-section{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .sort-section .MuiFormControl-root{
+
+        width:180px;
+
+    }
+
+}

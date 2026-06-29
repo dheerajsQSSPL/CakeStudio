@@ -1,0 +1,23 @@
+.payment-input{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #e6e6e6;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.payment-input:focus{
+
+    border-color:#ff5b84;
+
+}

@@ -1,0 +1,83 @@
+.account-sidebar{
+
+    border-radius:20px !important;
+
+    border:1px solid #f4dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    overflow:hidden;
+
+    padding:10px;
+
+}
+
+.sidebar-item{
+
+    border-radius:12px !important;
+
+    margin-bottom:8px !important;
+
+    min-height:52px;
+
+    transition:.25s;
+
+}
+
+.sidebar-item:hover{
+
+    background:#fff5f8 !important;
+
+}
+
+.sidebar-item.Mui-selected{
+
+    background:#ffeef3 !important;
+
+}
+
+.sidebar-item.Mui-selected:hover{
+
+    background:#ffeef3 !important;
+
+}
+
+.sidebar-item.Mui-selected .sidebar-icon{
+
+    color:#ff5b84;
+
+}
+
+.sidebar-item.Mui-selected .MuiListItemText-primary{
+
+    color:#ff5b84;
+
+    font-weight:600;
+
+}
+
+.sidebar-icon{
+
+    min-width:40px !important;
+
+    color:#777;
+
+}
+
+.MuiListItemText-primary{
+
+    font-size:15px !important;
+
+    font-weight:500 !important;
+
+}
+
+@media(max-width:900px){
+
+    .account-sidebar{
+
+        margin-bottom:25px;
+
+    }
+
+}

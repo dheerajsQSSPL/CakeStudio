@@ -1,0 +1,179 @@
+.ordered-items-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    margin-bottom:25px;
+
+}
+
+.ordered-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.ordered-header svg{
+
+    color:#ff5b84;
+
+    font-size:28px;
+
+}
+
+.ordered-title{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+}
+
+.ordered-item{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr 120px 120px;
+
+    gap:20px;
+
+    align-items:center;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#fff9fb;
+
+    border:1px solid #f6e4ea;
+
+}
+
+.ordered-image{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+}
+
+.cake-name{
+
+    font-size:18px !important;
+
+    font-weight:700 !important;
+
+}
+
+.cake-price{
+
+    color:#ff5b84;
+
+    font-weight:700 !important;
+
+    margin-top:6px !important;
+
+}
+
+.heading{
+
+    font-size:13px !important;
+
+    color:#888;
+
+    margin-bottom:6px !important;
+
+}
+
+.ordered-qty,
+
+.ordered-total{
+
+    text-align:center;
+
+}
+
+.item-total{
+
+    font-weight:700 !important;
+
+    font-size:18px !important;
+
+}
+
+.summary{
+
+    max-width:320px;
+
+    margin-left:auto;
+
+}
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:14px 0;
+
+}
+
+.free{
+
+    color:#2eb85c;
+
+    font-weight:700 !important;
+
+}
+
+.total{
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.total p:last-child{
+
+    color:#ff5b84;
+
+}
+
+@media(max-width:768px){
+
+    .ordered-item{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .ordered-image{
+
+        margin:auto;
+
+    }
+
+    .summary{
+
+        max-width:100%;
+
+    }
+
+}

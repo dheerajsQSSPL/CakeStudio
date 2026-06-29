@@ -1,0 +1,43 @@
+.product-specifications{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.product-specification{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.specification-icon{
+
+    color:#8c8c8c;
+
+    font-size:22px!important;
+
+}
+
+.specification-text{
+
+    font-size:15px!important;
+
+    color:#666;
+
+}
+
+.specification-label{
+
+    font-weight:700;
+
+    color:#2d2d2d;
+
+}

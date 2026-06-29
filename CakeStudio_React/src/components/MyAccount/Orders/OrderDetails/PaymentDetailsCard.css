@@ -1,0 +1,85 @@
+.payment-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    height:100%;
+
+}
+
+.payment-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:24px;
+
+}
+
+.payment-header svg{
+
+    color:#ff5b84;
+
+    font-size:28px;
+
+}
+
+.payment-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+}
+
+.payment-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    margin-bottom:22px;
+
+}
+
+.payment-item svg{
+
+    color:#ff5b84;
+
+}
+
+.payment-label{
+
+    font-size:13px !important;
+
+    color:#888;
+
+    margin-bottom:4px !important;
+
+}
+
+.payment-value{
+
+    font-size:16px !important;
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.amount{
+
+    color:#ff5b84;
+
+    font-size:18px !important;
+
+}
