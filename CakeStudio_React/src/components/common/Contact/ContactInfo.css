@@ -1,0 +1,35 @@
+.contact-info {
+
+    background: #fff;
+
+    border: 1px solid #f6e2e8;
+
+    border-radius: 18px;
+
+    padding: 34px;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+}
+
+.contact-info-title{
+
+    font-size:24px!important;
+
+    font-weight:700!important;
+
+    margin-bottom:8px!important;
+
+}
+
+.contact-info-subtitle{
+
+    color:#777;
+
+    font-size:14px!important;
+
+    margin-bottom:24px!important;
+
+}

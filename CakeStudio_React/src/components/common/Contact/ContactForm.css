@@ -1,0 +1,49 @@
+.contact-form {
+
+    background: #fff;
+
+    border: 1px solid #f6e2e8;
+
+    border-radius: 18px;
+
+    padding: 34px;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+}
+
+.contact-form-title {
+
+    font-size: 24px !important;
+
+    font-weight: 700 !important;
+
+    color: #2d2d2d;
+
+    margin-bottom: 6px !important;
+
+}
+
+.contact-form-subtitle {
+
+    font-size: 14px !important;
+
+    color: #777;
+
+    margin-bottom: 28px !important;
+
+    line-height: 1.7 !important;
+
+}
+
+.contact-form-button {
+
+    margin-top: 28px;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+}
