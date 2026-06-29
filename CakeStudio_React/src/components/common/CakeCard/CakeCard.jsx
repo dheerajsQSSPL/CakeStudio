@@ -13,8 +13,11 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 import "./CakeCard.css";
+import { useNavigate } from "react-router-dom";
+import useCart from "../../../hooks/useCart";
 
 const CakeCard = ({
+    id,
     image,
     name,
     rating,
@@ -22,9 +25,18 @@ const CakeCard = ({
     price,
     favourite = false
 }) => {
+    const navigate = useNavigate();
+    const { addToCart } = useCart();
+    const handleNavigate = () => {
+        navigate(`/product/${id}`);
+    };
+
+    const handleCart = () => {
+        addToCart(id, 1)
+    }
     return (
 
-        <Card className="cake-card">
+        <Card className="cake-card" onClick={handleNavigate}>
 
             <Box className="cake-image-container">
 
@@ -35,7 +47,11 @@ const CakeCard = ({
                     className="cake-image"
                 />
 
-                <IconButton className="favorite-btn">
+                <IconButton className="favorite-btn"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        console.log("Wishlist");
+                    }}>
 
                     <FavoriteBorderOutlinedIcon />
 
@@ -73,6 +89,10 @@ const CakeCard = ({
                     variant="outlined"
                     startIcon={<ShoppingCartOutlinedIcon />}
                     className="add-cart-btn"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        handleCart();
+                    }}
                 >
                     Add to Cart
                 </Button>

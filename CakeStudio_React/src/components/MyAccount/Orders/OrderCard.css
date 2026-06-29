@@ -1,0 +1,173 @@
+.order-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    margin-bottom:24px;
+
+}
+
+.order-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.order-product{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.order-image{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:16px;
+
+    object-fit:cover;
+
+}
+
+.cake-title{
+
+    font-size:20px !important;
+
+    font-weight:700 !important;
+
+}
+
+.cake-qty{
+
+    color:#777;
+
+    margin-top:6px !important;
+
+}
+
+.order-details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+.detail{
+
+    display:flex;
+
+    gap:14px;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    background:#fff8fa;
+
+}
+
+.detail svg{
+
+    color:#ff5b84;
+
+}
+
+.label{
+
+    font-size:13px !important;
+
+    color:#888;
+
+    margin-bottom:4px !important;
+
+}
+
+.order-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid #f2e5ea;
+
+    padding-top:20px;
+
+}
+
+.amount{
+
+    font-size:28px !important;
+
+    font-weight:700 !important;
+
+    color:#ff5b84;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+@media(max-width:768px){
+
+    .order-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .order-details{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .order-footer{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+}

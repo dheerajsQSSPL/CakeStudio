@@ -1,0 +1,49 @@
+.account-page{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:35px 20px 60px;
+
+}
+
+.account-title{
+
+    font-size:38px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+    margin-top:12px !important;
+
+}
+
+.account-subtitle{
+
+    color:#777;
+
+    font-size:15px !important;
+
+    margin-top:8px !important;
+
+    margin-bottom:35px !important;
+
+}
+
+@media(max-width:900px){
+
+    .account-page{
+
+        padding:20px 16px 40px;
+
+    }
+
+    .account-title{
+
+        font-size:30px !important;
+
+    }
+
+}

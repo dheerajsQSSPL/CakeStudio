@@ -1,0 +1,252 @@
+.success-header{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.success-icon-container{
+
+    width:140px;
+
+    height:140px;
+
+    margin:0 auto 28px;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.success-icon{
+
+    font-size:92px !important;
+
+    color:#2eb85c;
+
+    background:white;
+
+    border-radius:50%;
+
+    padding:10px;
+
+    box-shadow:
+        0 12px 35px rgba(46,184,92,.22);
+
+    animation:pop .45s ease;
+
+    z-index:2;
+
+}
+
+/* Decorative Circle */
+
+.success-icon-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(46,184,92,.10),
+    transparent 70%);
+
+}
+
+/* Title */
+
+.success-title{
+
+    font-size:42px !important;
+
+    font-weight:700 !important;
+
+    color:#2d2d2d;
+
+    margin-bottom:12px !important;
+
+}
+
+/* Subtitle */
+
+.success-subtitle{
+
+    font-size:18px !important;
+
+    color:#666;
+
+    margin-bottom:8px !important;
+
+}
+
+/* Description */
+
+.success-description{
+
+    max-width:560px;
+
+    margin:auto !important;
+
+    color:#888;
+
+    line-height:1.8;
+
+    font-size:15px !important;
+
+}
+
+/* Floating dots */
+
+.dot{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    animation:float 2.4s infinite;
+
+}
+
+.dot1{
+
+    top:12px;
+
+    left:20px;
+
+    background:#ff5b84;
+
+}
+
+.dot2{
+
+    top:25px;
+
+    right:18px;
+
+    background:#2eb85c;
+
+}
+
+.dot3{
+
+    right:40px;
+
+    top:5px;
+
+    background:#ffcb45;
+
+}
+
+.dot4{
+
+    left:38px;
+
+    top:50px;
+
+    background:#7d5fff;
+
+}
+
+.dot5{
+
+    right:30px;
+
+    top:55px;
+
+    background:#00bcd4;
+
+}
+
+.dot6{
+
+    left:55px;
+
+    bottom:20px;
+
+    background:#ff7b72;
+
+}
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.4);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .success-title{
+
+        font-size:32px !important;
+
+    }
+
+    .success-subtitle{
+
+        font-size:16px !important;
+
+    }
+
+    .success-description{
+
+        font-size:14px !important;
+
+        padding:0 20px;
+
+    }
+
+}

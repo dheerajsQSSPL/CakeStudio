@@ -1,0 +1,97 @@
+.shipping-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    height:100%;
+
+}
+
+.shipping-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:24px;
+
+}
+
+.shipping-header svg{
+
+    color:#ff5b84;
+
+    font-size:28px;
+
+}
+
+.shipping-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+}
+
+.address-item{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    margin-bottom:20px;
+
+}
+
+.address-item svg{
+
+    color:#ff5b84;
+
+}
+
+.address-label{
+
+    font-size:13px !important;
+
+    color:#888;
+
+    margin-bottom:4px !important;
+
+}
+
+.address-value{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.address-box{
+
+    margin-top:25px;
+
+    padding:18px;
+
+    background:#fff8fa;
+
+    border-radius:14px;
+
+    border:1px solid #f6e1e8;
+
+}
+
+.address-text{
+
+    line-height:1.9;
+
+    color:#444;
+
+}

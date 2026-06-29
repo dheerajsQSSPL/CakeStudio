@@ -55,6 +55,7 @@ const HomePage = () => {
                     <Grid key={cake.id}>
 
                         <CakeCard
+                            id={cake.id}
                             image={cake.image}
                             name={cake.name}
                             rating={cake.rating}
@@ -73,7 +74,7 @@ const HomePage = () => {
                     // maxWidth: "1400px",
                     // width:"100%",
                     mx: "auto",
-                    paddingTop:5
+                    paddingTop: 5
                 }}
             >
                 <Box className="feature-section">

@@ -1,0 +1,45 @@
+.orders-page{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:35px 20px 60px;
+
+}
+
+.orders-page-title{
+
+    font-size:36px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+    margin-top:15px !important;
+
+}
+
+.orders-page-subtitle{
+
+    color:#777;
+
+    margin:8px 0 35px !important;
+
+}
+
+@media(max-width:900px){
+
+    .orders-page{
+
+        padding:20px 16px 40px;
+
+    }
+
+    .orders-page-title{
+
+        font-size:30px !important;
+
+    }
+
+}

@@ -1,0 +1,119 @@
+.order-header-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+    margin-bottom:25px;
+
+}
+
+.order-header-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.order-id{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+    color:#2d2d2d;
+
+}
+
+.placed-on{
+
+    color:#777;
+
+    margin-top:5px !important;
+
+}
+
+.header-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#fff9fb;
+
+    border:1px solid #f6e1e8;
+
+    border-radius:14px;
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.header-item:hover{
+
+    background:#fff4f7;
+
+    transform:translateY(-2px);
+
+}
+
+.header-item svg{
+
+    color:#ff5b84;
+
+    font-size:24px;
+
+}
+
+.label{
+
+    color:#888;
+
+    font-size:13px !important;
+
+    margin-bottom:4px !important;
+
+}
+
+.value{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.amount{
+
+    color:#ff5b84;
+
+    font-size:18px !important;
+
+}
+
+@media(max-width:768px){
+
+    .order-header-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}

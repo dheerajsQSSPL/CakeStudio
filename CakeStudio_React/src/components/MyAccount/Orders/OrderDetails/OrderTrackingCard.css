@@ -1,0 +1,147 @@
+.tracking-card{
+
+    margin-top:25px;
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+}
+
+.tracking-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.tracking-header svg{
+
+    color:#ff5b84;
+
+    font-size:28px;
+
+}
+
+.tracking-title{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+}
+
+.tracking-timeline{
+
+    position:relative;
+
+    margin-left:10px;
+
+}
+
+.tracking-step{
+
+    display:flex;
+
+    gap:22px;
+
+    position:relative;
+
+    padding-bottom:30px;
+
+}
+
+.timeline-left{
+
+    position:relative;
+
+    width:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.completed-icon{
+
+    color:#2eb85c;
+
+    font-size:28px !important;
+
+    z-index:2;
+
+    background:white;
+
+}
+
+.pending-icon{
+
+    color:#cfcfcf;
+
+    font-size:28px !important;
+
+    z-index:2;
+
+    background:white;
+
+}
+
+.timeline-line{
+
+    position:absolute;
+
+    top:28px;
+
+    width:2px;
+
+    height:100%;
+
+    background:#d8d8d8;
+
+}
+
+.step-title{
+
+    font-size:17px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+}
+
+.step-date{
+
+    color:#777;
+
+    margin:5px 0 !important;
+
+    font-size:14px !important;
+
+}
+
+.step-description{
+
+    color:#999;
+
+    line-height:1.7;
+
+}
+
+@media(max-width:768px){
+
+    .tracking-step{
+
+        gap:15px;
+
+    }
+
+}

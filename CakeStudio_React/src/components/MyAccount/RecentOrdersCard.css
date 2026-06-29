@@ -1,0 +1,129 @@
+.recent-orders-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #f5dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+}
+
+.orders-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.orders-title{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+    color:#2d2d2d;
+
+}
+
+.order-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.order-image{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:16px;
+
+    object-fit:cover;
+
+}
+
+.order-content{
+
+    flex:1;
+
+}
+
+.cake-name{
+
+    font-size:18px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+}
+
+.order-id{
+
+    color:#888;
+
+    margin-top:6px !important;
+
+}
+
+.order-date{
+
+    color:#666;
+
+    font-size:14px !important;
+
+    margin-top:4px !important;
+
+}
+
+.order-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:8px;
+
+}
+
+.order-price{
+
+    font-size:20px !important;
+
+    font-weight:700 !important;
+
+    color:#ff5b84;
+
+}
+
+@media(max-width:768px){
+
+    .order-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .order-right{
+
+        width:100%;
+
+        align-items:flex-start;
+
+    }
+
+}
