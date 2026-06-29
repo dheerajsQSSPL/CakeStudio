@@ -1,0 +1,101 @@
+.contact-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:16px;
+
+    border:1px solid #f4e8ec;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    box-shadow:none;
+
+    transition:.25s;
+
+}
+
+.contact-card:hover{
+
+    border-color:#ffd4df;
+
+    background:#fffafb;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+
+
+.contact-card-icon{
+
+    width:42px;
+
+    height:42px;
+
+    min-width:42px;
+
+    border-radius:50%;
+
+    background:#fff1f5;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contact-card-icon-svg{
+
+    color:#ff5b84;
+
+    font-size:20px!important;
+
+}
+
+
+
+.contact-card-content {
+
+    flex: 1;
+
+}
+
+.contact-card-title{
+
+    font-size:14px!important;
+
+    font-weight:700!important;
+
+    margin-bottom:4px!important;
+
+}
+
+.contact-card-value{
+
+    font-size:14px!important;
+
+    font-weight:600!important;
+
+    color:#444;
+
+}
+
+.contact-card-subvalue{
+
+    font-size:12px!important;
+
+    color:#888;
+
+    margin-top:2px!important;
+
+}
