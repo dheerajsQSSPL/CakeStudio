@@ -18,7 +18,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import "./AccountSidebar.css";
 
-export default function AccountSidebar() {
+export default function AccountSidebar({ onLogout }) {
 
     const navigate = useNavigate();
 
@@ -54,7 +54,7 @@ export default function AccountSidebar() {
         {
             label: "Logout",
             icon: <LogoutOutlinedIcon />,
-            path: "/logout"
+            action: "logout"
         }
 
     ];
@@ -75,7 +75,21 @@ export default function AccountSidebar() {
 
                             selected={location.pathname === item.path}
 
-                            onClick={() => navigate(item.path)}
+                            onClick={() => {
+
+                                if (item.action === "logout") {
+
+                                    onLogout();
+
+                                }
+
+                                else {
+
+                                    navigate(item.path);
+
+                                }
+
+                            }}
 
                             className="sidebar-item"
 

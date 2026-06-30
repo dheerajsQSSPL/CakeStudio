@@ -1,0 +1,101 @@
+.preferences-card{
+
+    margin-bottom:30px;
+
+    border-radius:20px !important;
+
+    border:1px solid #f4dce3;
+
+    box-shadow:0 10px 30px rgba(255,91,132,.08) !important;
+
+}
+
+.preferences-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.preferences-header svg{
+
+    font-size:30px;
+
+    color:#ff5b84;
+
+}
+
+.preferences-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+}
+
+.preferences-subtitle{
+
+    color:#777;
+
+    margin-top:4px !important;
+
+}
+
+.preference-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    gap:20px;
+
+}
+
+.preference-title{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.preference-description{
+
+    color:#777;
+
+    margin-top:5px !important;
+
+    font-size:14px !important;
+
+}
+
+.MuiSwitch-switchBase.Mui-checked{
+
+    color:#ff5b84 !important;
+
+}
+
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track{
+
+    background:#ff5b84 !important;
+
+}
+
+@media(max-width:768px){
+
+    .preference-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}

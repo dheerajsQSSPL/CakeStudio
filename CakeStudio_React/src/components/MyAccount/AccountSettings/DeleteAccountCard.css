@@ -1,0 +1,93 @@
+.delete-account-card{
+
+    border-radius:20px !important;
+
+    border:1px solid #ffd9d9 !important;
+
+    background:#fff8f8 !important;
+
+    box-shadow:none !important;
+
+    margin-bottom:30px;
+
+}
+
+.delete-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:25px;
+
+}
+
+.delete-header svg{
+
+    font-size:34px;
+
+    color:#d32f2f;
+
+}
+
+.delete-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+    color:#d32f2f;
+
+}
+
+.delete-subtitle{
+
+    color:#777;
+
+    margin-top:4px !important;
+
+}
+
+.delete-description{
+
+    font-weight:600 !important;
+
+    color:#444;
+
+    margin-bottom:12px !important;
+
+}
+
+.delete-list{
+
+    margin:0 0 20px 20px;
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+.delete-note{
+
+    color:#d32f2f;
+
+    font-weight:600 !important;
+
+    margin-bottom:25px !important;
+
+}
+
+.delete-account-btn{
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:12px 24px !important;
+
+    font-weight:600 !important;
+
+}
