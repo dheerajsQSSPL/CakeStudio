@@ -12,9 +12,14 @@ import Breadcrumb from "../common/Breadcrumb/Breadcrumb";
 import "./MyAccount.css";
 import AccountSidebar from "./AccountSidebar";
 import AccountOverview from "./AccountOverview";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import LogoutDialog from "./LogOut/LogoutDialog";
 
-export default function MyAccountLayout({children}) {
+export default function MyAccountLayout({ children }) {
+    const [logoutOpen, setLogoutOpen] = useState(false);
 
+    const navigate = useNavigate();
     return (
 
         <Box className="account-page">
@@ -47,7 +52,7 @@ export default function MyAccountLayout({children}) {
 
                 <Grid size={{ xs: 12, md: 3 }}>
 
-                    <AccountSidebar />
+                    <AccountSidebar onLogout={() => setLogoutOpen(true)} />
 
                 </Grid>
 
@@ -55,11 +60,28 @@ export default function MyAccountLayout({children}) {
 
                 <Grid size={{ xs: 12, md: 9 }}>
 
-                   {children}
+                    {children}
 
                 </Grid>
 
             </Grid>
+            <LogoutDialog
+
+                open={logoutOpen}
+
+                onClose={() => setLogoutOpen(false)}
+
+                onLogout={() => {
+
+                    localStorage.clear();
+
+                    setLogoutOpen(false);
+
+                    navigate("/login");
+
+                }}
+
+            />
 
         </Box>
 

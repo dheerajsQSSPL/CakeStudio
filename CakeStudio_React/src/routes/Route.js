@@ -19,6 +19,7 @@ import Order from "../pages/MyAccount/Order";
 import OrderDetail from "../pages/MyAccount/OrderDetail";
 import Address from "../pages/MyAccount/Address";
 import Wishlists from "../pages/MyAccount/Wishlists";
+import AccountSetting from "../pages/MyAccount/AccountSetting";
 
 const route = [
     { path: '/login', name: 'LogIn', component: Login, element: Login },
@@ -42,6 +43,7 @@ const route = [
     { path: '/my-account/orders/:orderId', name: 'OrdersDetails', component: OrderDetail, element: OrderDetail },
     { path: '/my-account/addresses', name: 'Address', component: Address, element: Address },
     { path: '/my-account/wishlist', name: 'Wishlists', component: Wishlists, element: Wishlists },
+    { path: '/my-account/settings', name: 'settings', component: AccountSetting, element: AccountSetting },
 
     // Always keep this last
     { path: "*", component: NotFound }
