@@ -1,0 +1,47 @@
+.cake-table{
+
+    border-radius:18px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+    border:1px solid #f3f3f3;
+
+}
+
+.cake-table .MuiTableHead-root{
+
+    background:#fafafa;
+
+}
+
+.cake-table .MuiTableHead-root .MuiTableCell-root{
+
+    font-weight:700;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.cake-table .MuiTableBody-root .MuiTableRow-root{
+
+    transition:.25s;
+
+}
+
+.cake-table .MuiTableBody-root .MuiTableRow-root:hover{
+
+    background:#fff8fb;
+
+}
+
+.cake-table .MuiTableCell-root{
+
+    border-bottom:1px solid #f4f4f4;
+
+    padding:18px;
+
+}

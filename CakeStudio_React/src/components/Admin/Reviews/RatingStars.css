@@ -1,0 +1,21 @@
+.rating-stars{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+}
+
+.rating-value{
+
+    font-size:13px !important;
+
+    color:#777;
+
+    font-weight:600 !important;
+
+}

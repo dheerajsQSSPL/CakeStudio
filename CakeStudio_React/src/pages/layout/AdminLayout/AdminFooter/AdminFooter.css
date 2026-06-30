@@ -1,0 +1,47 @@
+.admin-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+    background:#ffffff;
+
+    border-top:1px solid #ececec;
+
+}
+
+.footer-left{
+
+    color:#666;
+
+    font-size:14px !important;
+
+}
+
+.footer-right{
+
+    color:#666;
+
+    font-size:14px !important;
+
+    font-weight:500 !important;
+
+}
+
+@media(max-width:768px){
+
+    .admin-footer{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        text-align:center;
+
+    }
+
+}

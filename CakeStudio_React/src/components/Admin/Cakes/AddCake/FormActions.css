@@ -1,0 +1,73 @@
+.form-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:16px;
+
+    margin-top:30px;
+
+}
+
+.cancel-btn{
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:10px 24px !important;
+
+    border-color:#d9d9d9 !important;
+
+    color:#555 !important;
+
+    font-weight:600 !important;
+
+}
+
+.cancel-btn:hover{
+
+    background:#f8f8f8 !important;
+
+}
+
+.save-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:10px 24px !important;
+
+    font-weight:600 !important;
+
+    box-shadow:0 8px 20px rgba(255,91,132,.18) !important;
+
+}
+
+.save-btn:hover{
+
+    background:#ec4f79 !important;
+
+}
+
+@media(max-width:600px){
+
+    .form-actions{
+
+        flex-direction:column-reverse;
+
+    }
+
+    .cancel-btn,
+
+    .save-btn{
+
+        width:100%;
+
+    }
+
+}

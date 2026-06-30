@@ -1,0 +1,131 @@
+.status-card{
+
+    border-radius:18px !important;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06) !important;
+
+}
+
+.status-title{
+
+    font-size:20px !important;
+
+    font-weight:700 !important;
+
+    margin-bottom:20px !important;
+
+}
+
+.status-chart{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:relative;
+
+}
+
+.chart-center{
+
+    position:absolute;
+
+    left:27%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+}
+
+.center-value{
+
+    font-size:34px !important;
+
+    font-weight:700 !important;
+
+}
+
+.center-label{
+
+    color:#777;
+
+}
+
+.status-list{
+
+    flex:1;
+
+    padding-left:20px;
+
+}
+
+.status-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:16px;
+
+}
+
+.status-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+}
+
+.status-name{
+
+    flex:1;
+
+    color:#555;
+
+}
+
+.status-count{
+
+    font-weight:700 !important;
+
+}
+
+@media(max-width:1200px){
+
+    .status-chart{
+
+        flex-direction:column;
+
+    }
+
+    .chart-center{
+
+        left:50%;
+
+        top:145px;
+
+    }
+
+    .status-list{
+
+        width:100%;
+
+        padding-left:0;
+
+        margin-top:20px;
+
+    }
+
+}

@@ -1,0 +1,105 @@
+.admin-profile-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.profile-title{
+
+    font-size:34px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.profile-subtitle{
+
+    color:#777;
+
+    margin-top:-12px !important;
+
+}
+
+.profile-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+}
+
+.profile-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.profile-avatar{
+
+    width:90px !important;
+
+    height:90px !important;
+
+    font-size:34px !important;
+
+    background:#ff5b84 !important;
+
+}
+
+.profile-name{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.profile-role{
+
+    color:#777;
+
+    margin-top:6px !important;
+
+}
+
+.profile-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:32px;
+
+}
+
+.profile-save-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:10px 24px !important;
+
+    font-weight:600 !important;
+
+}
+
+.profile-save-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

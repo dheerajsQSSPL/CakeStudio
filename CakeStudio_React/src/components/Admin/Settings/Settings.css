@@ -1,0 +1,75 @@
+.settings-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.settings-page-title{
+
+    font-size:34px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.settings-page-subtitle{
+
+    color:#777;
+
+    margin-top:-12px !important;
+
+}
+
+.settings-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+}
+
+.settings-switches{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.settings-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:30px;
+
+}
+
+.save-settings-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:10px 24px !important;
+
+    font-weight:600 !important;
+
+}
+
+.save-settings-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

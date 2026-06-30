@@ -1,0 +1,83 @@
+.cake-form-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+}
+
+.cake-form-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.cake-form-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:14px;
+
+    background:#fff2f6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.cake-form-icon svg{
+
+    color:#ff5b84;
+
+    font-size:30px;
+
+}
+
+.cake-form-title{
+
+    font-size:28px !important;
+
+    font-weight:700 !important;
+
+}
+
+.cake-form-subtitle{
+
+    color:#777;
+
+    margin-top:4px !important;
+
+}
+
+.save-cake-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:12px 24px !important;
+
+    font-weight:600 !important;
+
+    box-shadow:0 8px 20px rgba(255,91,132,.20) !important;
+
+}
+
+.save-cake-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

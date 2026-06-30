@@ -1,0 +1,71 @@
+.cake-avatar{
+
+    width:64px !important;
+
+    height:64px !important;
+
+    border-radius:12px !important;
+
+    border:1px solid #f2f2f2;
+
+}
+
+.cake-name{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.cake-price{
+
+    font-weight:600 !important;
+
+    color:#222;
+
+}
+
+.cake-category{
+
+    color:#666;
+
+}
+
+.edit-btn{
+
+    border-color:#ffb3c7 !important;
+
+    color:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    min-width:90px;
+
+}
+
+.edit-btn:hover{
+
+    background:#fff2f6 !important;
+
+    border-color:#ff5b84 !important;
+
+}
+
+.delete-btn{
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    min-width:90px;
+
+}
+
+.delete-btn:hover{
+
+    background:#fff5f5 !important;
+
+}

@@ -1,0 +1,39 @@
+.reviews-tabs{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+
+    padding:0 20px;
+
+}
+
+.reviews-tabs .MuiTabs-indicator{
+
+    background:#ff5b84;
+
+    height:3px;
+
+    border-radius:3px;
+
+}
+
+.reviews-tabs .MuiTab-root{
+
+    text-transform:none !important;
+
+    font-weight:600 !important;
+
+    color:#666 !important;
+
+    min-height:56px;
+
+}
+
+.reviews-tabs .Mui-selected{
+
+    color:#ff5b84 !important;
+
+}

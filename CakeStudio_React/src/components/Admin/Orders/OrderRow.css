@@ -1,0 +1,65 @@
+.order-id{
+
+    font-weight:700 !important;
+
+    color:#333;
+
+}
+
+.customer-name{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.customer-mobile{
+
+    color:#888;
+
+    font-size:13px !important;
+
+    margin-top:2px !important;
+
+}
+
+.order-amount{
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.transaction-id{
+
+    font-family:monospace;
+
+    font-size:13px !important;
+
+    color:#666;
+
+}
+
+.view-order-btn{
+
+    border-color:#ffb6c8 !important;
+
+    color:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    min-width:95px;
+
+}
+
+.view-order-btn:hover{
+
+    background:#fff2f6 !important;
+
+    border-color:#ff5b84 !important;
+
+}

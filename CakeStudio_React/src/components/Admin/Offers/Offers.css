@@ -1,0 +1,103 @@
+.offers-page{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:70vh;
+
+    padding:40px;
+
+}
+
+.offers-card{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border:1px solid #f2f2f2;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.offers-chip{
+
+    margin-bottom:24px !important;
+
+    background:#fff2f6 !important;
+
+    color:#ff5b84 !important;
+
+    font-weight:600 !important;
+
+}
+
+.offers-icon{
+
+    font-size:90px !important;
+
+    color:#ff5b84;
+
+    margin-bottom:24px;
+
+}
+
+.offers-title{
+
+    font-size:36px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+    margin-bottom:18px !important;
+
+}
+
+.offers-description{
+
+    max-width:520px;
+
+    margin:0 auto 35px !important;
+
+    line-height:1.8;
+
+    color:#666;
+
+    font-size:16px !important;
+
+}
+
+.offers-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:12px 28px !important;
+
+    font-weight:600 !important;
+
+}
+
+.offers-btn.Mui-disabled{
+
+    background:#ffb6c8 !important;
+
+    color:#fff !important;
+
+}

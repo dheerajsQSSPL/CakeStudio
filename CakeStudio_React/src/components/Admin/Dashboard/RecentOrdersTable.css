@@ -1,0 +1,63 @@
+.recent-orders-card{
+
+    border-radius:18px !important;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06) !important;
+
+}
+
+.table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.table-title{
+
+    font-size:20px !important;
+
+    font-weight:700 !important;
+
+}
+
+.view-all{
+
+    color:#ff5b84;
+
+    cursor:pointer;
+
+    font-weight:600 !important;
+
+}
+
+.customer-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.MuiTableHead-root th{
+
+    font-weight:700 !important;
+
+    color:#666;
+
+    background:#fafafa;
+
+}
+
+.MuiTableBody-root tr:hover{
+
+    background:#fff8fb;
+
+}

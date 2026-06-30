@@ -1,0 +1,93 @@
+.reply-dialog{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    margin-top:8px;
+
+}
+
+.reply-customer-card{
+
+    background:#fafafa;
+
+    border:1px solid #f2f2f2;
+
+    border-radius:14px;
+
+    padding:16px;
+
+}
+
+.reply-customer-name{
+
+    font-size:16px !important;
+
+    font-weight:700 !important;
+
+    color:#333;
+
+}
+
+.reply-customer-email{
+
+    margin-top:4px !important;
+
+    color:#777;
+
+    font-size:14px !important;
+
+}
+
+.reply-message-card{
+
+    background:#fff8fb;
+
+    border-left:4px solid #ff5b84;
+
+    border-radius:12px;
+
+    padding:16px;
+
+}
+
+.reply-label{
+
+    font-weight:700 !important;
+
+    margin-bottom:10px !important;
+
+    color:#444;
+
+}
+
+.customer-message{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.send-reply-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    padding:8px 22px !important;
+
+    font-weight:600 !important;
+
+}
+
+.send-reply-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

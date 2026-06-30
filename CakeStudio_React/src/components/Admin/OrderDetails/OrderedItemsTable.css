@@ -1,0 +1,65 @@
+.ordered-items-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06) !important;
+
+}
+
+.ordered-items-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+    margin-bottom:18px !important;
+
+}
+
+.ordered-item-image{
+
+    width:70px !important;
+
+    height:70px !important;
+
+    border-radius:14px !important;
+
+}
+
+.ordered-item-name{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.ordered-item-total{
+
+    color:#ff5b84;
+
+    font-weight:700 !important;
+
+}
+
+.ordered-items-card .MuiTableHead-root{
+
+    background:#fafafa;
+
+}
+
+.ordered-items-card .MuiTableHead-root .MuiTableCell-root{
+
+    font-weight:700;
+
+    color:#555;
+
+}
+
+.ordered-items-card .MuiTableRow-root:hover{
+
+    background:#fff8fb;
+
+}

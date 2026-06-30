@@ -1,0 +1,27 @@
+.timeline-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06) !important;
+
+}
+
+.timeline-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+    margin-bottom:18px !important;
+
+}
+
+.timeline-step{
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}

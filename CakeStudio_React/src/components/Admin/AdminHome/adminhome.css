@@ -1,0 +1,131 @@
+.admin-home-header{
+
+    background:linear-gradient(135deg,#fff7fa,#fff);
+
+    border-radius:22px;
+
+    padding:40px;
+
+    margin-bottom:35px;
+
+    border:1px solid #ffe3ea;
+
+}
+
+.admin-home-title{
+
+    font-size:42px !important;
+
+    font-weight:700 !important;
+
+    color:#2f2f2f;
+
+}
+
+.admin-home-subtitle{
+
+    margin-top:10px !important;
+
+    color:#777;
+
+    font-size:17px !important;
+
+}
+
+.card{
+
+    border-radius:22px !important;
+
+    border:1px solid #f4dce3;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(255,91,132,.18);
+
+}
+
+.card-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:#fff2f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+}
+
+.card-icon svg{
+
+    font-size:42px;
+
+    color:#ff5b84;
+
+}
+
+.open-btn{
+
+    background:#ff5b84 !important;
+
+    border-radius:14px !important;
+
+    text-transform:none !important;
+
+    font-weight:600 !important;
+
+    padding:10px 26px !important;
+
+    box-shadow:none !important;
+
+}
+
+.open-btn:hover{
+
+    background:#ec4f79 !important;
+
+}
+
+.admin-home{
+
+    background:#fafbfc;
+
+    min-height:100%;
+
+    padding:10px;
+
+}
+
+.card:hover .card-icon{
+
+    background:#ff5b84;
+
+}
+
+.card:hover .card-icon svg{
+
+    color:white;
+
+}
+
+.card{
+
+    height:330px;
+
+}
