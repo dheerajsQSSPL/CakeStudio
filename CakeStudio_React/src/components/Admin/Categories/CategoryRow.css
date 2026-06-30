@@ -1,0 +1,93 @@
+.category-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.category-avatar{
+
+    width:58px !important;
+
+    height:58px !important;
+
+    border-radius:14px !important;
+
+    border:1px solid #f2f2f2;
+
+    flex-shrink:0;
+
+}
+
+.category-name{
+
+    font-size:16px !important;
+
+    font-weight:700 !important;
+
+    color:#333;
+
+}
+
+.category-description{
+
+    margin-top:4px !important;
+
+    color:#888;
+
+    font-size:13px !important;
+
+    max-width:320px;
+
+    overflow:hidden;
+
+    display:-webkit-box;
+
+    /* -webkit-line-clamp:2; */
+
+    -webkit-box-orient:vertical;
+
+}
+
+.product-count{
+
+    font-weight:700 !important;
+
+    color:#444;
+
+}
+
+.edit-btn{
+
+    background:#fff6e8 !important;
+
+    color:#f59e0b !important;
+
+    transition:.3s !important;
+
+}
+
+.edit-btn:hover{
+
+    background:#fde8b2 !important;
+
+}
+
+.delete-btn{
+
+    background:#fff0f2 !important;
+
+    color:#ef4444 !important;
+
+    transition:.3s !important;
+
+}
+
+.delete-btn:hover{
+
+    background:#ffd6dc !important;
+
+}

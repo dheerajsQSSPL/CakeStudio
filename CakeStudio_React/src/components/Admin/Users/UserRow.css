@@ -1,0 +1,69 @@
+.user-id{
+
+    font-weight:700 !important;
+
+    color:#555;
+
+}
+
+.customer-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.customer-name{
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    color:#333;
+
+}
+
+.customer-email{
+
+    font-size:13px !important;
+
+    color:#888;
+
+}
+
+.customer-mobile{
+
+    font-weight:500 !important;
+
+    color:#555;
+
+}
+
+.orders-chip{
+
+    background:#fff2f6 !important;
+
+    color:#ff5b84 !important;
+
+    font-weight:600 !important;
+
+}
+
+.delete-user-btn{
+
+    background:#fff0f2 !important;
+
+    color:#ef4444 !important;
+
+    transition:.3s !important;
+
+}
+
+.delete-user-btn:hover{
+
+    background:#ffd8df !important;
+
+}

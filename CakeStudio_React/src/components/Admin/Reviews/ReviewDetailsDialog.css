@@ -1,0 +1,63 @@
+.review-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.info-label{
+
+    font-size:13px !important;
+
+    color:#888;
+
+    font-weight:600 !important;
+
+}
+
+.info-value{
+
+    font-size:15px !important;
+
+    font-weight:600 !important;
+
+    color:#333;
+
+}
+
+.review-message-full{
+
+    margin-top:12px !important;
+
+    padding:18px;
+
+    background:#fafafa;
+
+    border-radius:12px;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+.close-review-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    padding:8px 22px !important;
+
+}
+
+.close-review-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

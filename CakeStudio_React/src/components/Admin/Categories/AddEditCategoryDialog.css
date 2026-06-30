@@ -1,0 +1,77 @@
+.category-dialog-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    margin-top:10px;
+
+}
+
+.image-upload-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.preview-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:14px;
+
+    border:1px solid #f2f2f2;
+
+    border-radius:14px;
+
+    background:#fafafa;
+
+}
+
+.category-preview{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+.preview-name{
+
+    font-weight:600 !important;
+
+    color:#555;
+
+}
+
+.save-category-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    padding:8px 22px !important;
+
+}
+
+.save-category-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

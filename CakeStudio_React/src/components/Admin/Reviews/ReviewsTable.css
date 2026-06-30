@@ -1,0 +1,43 @@
+.reviews-table-card{
+
+    border-radius:18px !important;
+
+    overflow:hidden;
+
+    border:1px solid #f2f2f2;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+}
+
+.reviews-table-card .MuiTableHead-root{
+
+    background:linear-gradient(
+        90deg,
+        #ffd7e3,
+        #ffc6d7
+    );
+
+}
+
+.reviews-table-card .MuiTableHead-root .MuiTableCell-root{
+
+    font-weight:700;
+
+    color:#b3124b;
+
+    font-size:15px;
+
+}
+
+.reviews-table-card .MuiTableCell-root{
+
+    padding:18px;
+
+}
+
+.reviews-table-card .MuiTableRow-root:hover{
+
+    background:#fff8fb;
+
+}

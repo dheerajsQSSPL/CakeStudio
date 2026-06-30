@@ -1,0 +1,71 @@
+.cake-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.cake-title{
+
+    font-size:34px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.cake-subtitle{
+
+    margin-top:6px !important;
+
+    color:#777;
+
+    font-size:15px !important;
+
+}
+
+.add-cake-btn{
+
+    background:#ff5b84 !important;
+
+    border-radius:14px !important;
+
+    text-transform:none !important;
+
+    padding:12px 22px !important;
+
+    font-weight:600 !important;
+
+    box-shadow:0 8px 20px rgba(255,91,132,.25) !important;
+
+}
+
+.add-cake-btn:hover{
+
+    background:#ec4f79 !important;
+
+}
+
+@media(max-width:768px){
+
+    .cake-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .add-cake-btn{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,83 @@
+.shipping-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06) !important;
+
+}
+
+.shipping-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+    margin-bottom:18px !important;
+
+}
+
+.shipping-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.shipping-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:#fff2f6;
+
+    color:#ff5b84;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.shipping-icon svg{
+
+    font-size:24px;
+
+}
+
+.shipping-content{
+
+    flex:1;
+
+}
+
+.shipping-label{
+
+    font-size:13px !important;
+
+    color:#888;
+
+}
+
+.shipping-value{
+
+    margin-top:4px !important;
+
+    font-size:16px !important;
+
+    font-weight:600 !important;
+
+    color:#222;
+
+    word-break:break-word;
+
+}

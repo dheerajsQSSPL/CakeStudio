@@ -1,0 +1,63 @@
+.update-status-card{
+
+    border-radius:20px !important;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06) !important;
+
+}
+
+.update-status-title{
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+    margin-bottom:18px !important;
+
+}
+
+.update-status-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.update-order-btn{
+
+    align-self:flex-end;
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:12px 24px !important;
+
+    font-weight:600 !important;
+
+    box-shadow:0 8px 20px rgba(255,91,132,.20) !important;
+
+}
+
+.update-order-btn:hover{
+
+    background:#ec4f79 !important;
+
+}
+
+@media(max-width:600px){
+
+    .update-order-btn{
+
+        width:100%;
+
+    }
+
+}

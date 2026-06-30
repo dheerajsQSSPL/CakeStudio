@@ -1,0 +1,47 @@
+.logout-title{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+}
+
+.logout-text{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:15px !important;
+
+}
+
+.logout-cancel-btn{
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    font-weight:600 !important;
+
+}
+
+.logout-confirm-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    padding:8px 22px !important;
+
+    font-weight:600 !important;
+
+}
+
+.logout-confirm-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

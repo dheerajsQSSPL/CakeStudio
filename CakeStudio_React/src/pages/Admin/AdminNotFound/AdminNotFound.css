@@ -1,0 +1,101 @@
+.admin-not-found{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:75vh;
+
+    padding:40px;
+
+}
+
+.admin-not-found-card{
+
+    max-width:650px;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border:1px solid #f2f2f2;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.admin-not-found-icon{
+
+    font-size:90px !important;
+
+    color:#ff5b84;
+
+    margin-bottom:20px;
+
+}
+
+.admin-error-code{
+
+    font-size:72px !important;
+
+    font-weight:800 !important;
+
+    color:#ff5b84;
+
+    line-height:1;
+
+}
+
+.admin-error-title{
+
+    margin-top:18px !important;
+
+    font-size:32px !important;
+
+    font-weight:700 !important;
+
+    color:#222;
+
+}
+
+.admin-error-description{
+
+    max-width:460px;
+
+    margin:18px auto 35px !important;
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:16px !important;
+
+}
+
+.admin-home-btn{
+
+    background:#ff5b84 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    padding:12px 28px !important;
+
+    font-weight:600 !important;
+
+}
+
+.admin-home-btn:hover{
+
+    background:#ec4f79 !important;
+
+}

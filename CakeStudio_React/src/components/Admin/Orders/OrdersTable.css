@@ -1,0 +1,39 @@
+.orders-table-card{
+
+    border-radius:18px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+
+    border:1px solid #f2f2f2;
+
+}
+
+.orders-table-card .MuiTableHead-root{
+
+    background:#fafafa;
+
+}
+
+.orders-table-card .MuiTableHead-root .MuiTableCell-root{
+
+    font-weight:700;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.orders-table-card .MuiTableCell-root{
+
+    padding:18px;
+
+}
+
+.orders-table-card .MuiTableRow-root:hover{
+
+    background:#fff8fb;
+
+}

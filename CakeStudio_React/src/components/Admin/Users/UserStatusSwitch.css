@@ -1,0 +1,31 @@
+.user-status-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+}
+
+.status-active{
+
+    color:#2e7d32;
+
+    font-weight:600 !important;
+
+    font-size:14px !important;
+
+}
+
+.status-inactive{
+
+    color:#d32f2f;
+
+    font-weight:600 !important;
+
+    font-size:14px !important;
+
+}

@@ -1,0 +1,53 @@
+.delete-user-title{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+}
+
+.delete-user-text{
+
+    font-size:16px !important;
+
+    color:#444;
+
+    line-height:1.8;
+
+}
+
+.delete-user-warning{
+
+    margin-top:12px !important;
+
+    color:#ef4444;
+
+    font-size:14px !important;
+
+    line-height:1.6;
+
+}
+
+.cancel-user-btn{
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    color:#666 !important;
+
+    font-weight:600 !important;
+
+}
+
+.confirm-user-delete-btn{
+
+    text-transform:none !important;
+
+    border-radius:10px !important;
+
+    padding:8px 20px !important;
+
+    font-weight:600 !important;
+
+}

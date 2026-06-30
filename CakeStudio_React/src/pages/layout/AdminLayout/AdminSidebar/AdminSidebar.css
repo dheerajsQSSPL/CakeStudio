@@ -1,0 +1,99 @@
+.admin-sidebar{
+
+    background:#ffffff;
+
+    border-right:1px solid #ececec;
+
+    min-height:100vh;
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+.expanded{
+
+    width:260px;
+
+}
+
+.collapsed{
+
+    width:80px;
+
+}
+
+.admin-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:24px 18px;
+
+}
+
+.admin-logo img{
+
+    width:46px;
+
+    height:46px;
+
+}
+
+.logo-title{
+
+    font-size:26px !important;
+
+    font-weight:700 !important;
+
+    color:#ff5b84;
+
+}
+
+.logo-subtitle{
+
+    font-size:11px !important;
+
+    color:#777;
+
+    letter-spacing:2px;
+
+}
+
+.admin-menu-item{
+
+    margin:8px 12px !important;
+
+    border-radius:12px !important;
+
+}
+
+.admin-menu-item.Mui-selected{
+
+    background:#fff1f5 !important;
+
+}
+
+.admin-menu-item.Mui-selected .MuiListItemIcon-root{
+
+    color:#ff5b84;
+
+}
+
+.admin-menu-item.Mui-selected .MuiTypography-root{
+
+    color:#ff5b84;
+
+    font-weight:600;
+
+}
+
+.admin-menu-item .MuiListItemIcon-root{
+
+    min-width:42px;
+
+}
