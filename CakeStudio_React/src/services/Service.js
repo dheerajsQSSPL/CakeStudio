@@ -55,7 +55,8 @@ api.interceptors.response.use(
             try {
 
                 const refreshToken = SessionManage.getRefreshToken();
-
+                console.log(refreshToken,"refreshToken")
+                alert(refreshToken)
                 const response = await axios.post(
                     CS_API_BASE_URL + "Auth/refresh-token",
                     {
@@ -105,6 +106,48 @@ class Service {
             }
         })
     }
+
+    // ---------------- Category ----------------
+
+    getAllCategories() {
+        return api.get("/Category/all");
+    }
+
+    getCategoryById(id) {
+        return api.get(`/Category/${id}`);
+    }
+
+    getCategories(params) {
+        return api.get("/Category", {
+            params
+        });
+    }
+
+    createCategory(formData) {
+        return api.post("/Category/CreateCategory", formData, {
+            headers: {
+                "Content-Type": "multipart/form-data"
+            }
+        });
+    }
+
+    updateCategory(formData) {
+        return api.put("/Category", formData, {
+            headers: {
+                "Content-Type": "multipart/form-data"
+            }
+        });
+    }
+
+    deleteCategory(id) {
+        return api.delete(`/Category/${id}`);
+    }
+
+    getCategoriesWithFilters(params) {
+    return api.get("/Category/getCategories", {
+        params
+    });
+}
 }
 
 export default new Service();

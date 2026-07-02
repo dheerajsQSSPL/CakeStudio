@@ -42,6 +42,9 @@ namespace CakeStudio.Infrastructure
             services.AddScoped<IAuditService,AuditService>();
             services.AddScoped<IInventoryRepository,InventoryRepository>();
             services.AddScoped<IInventoryService,InventoryService>();
+            services.AddScoped<IFileUpload, FileUploadService>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICategoryService, CategoryService>();
 
             return services;
         }

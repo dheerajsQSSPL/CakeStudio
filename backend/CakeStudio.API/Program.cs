@@ -39,6 +39,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 builder.Services.AddInfrastructure();
 builder.Services.AddHttpContextAccessor();
+
 // Remove or comment out the following line, as there is no AddInfrastructure method defined or imported:
 // builder.Services.AddInfrastructure();
 builder.Services.AddEndpointsApiExplorer();
@@ -109,6 +110,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 app.UseCors("ReactPolicy");
+app.UseStaticFiles();
 app.UseGlobalExceptionMiddleware();
 app.UseAuthentication();
 app.UseAuthorization();

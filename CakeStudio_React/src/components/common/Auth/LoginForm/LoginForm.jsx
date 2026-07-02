@@ -6,13 +6,14 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-
+import SessionManage from "../../../../Session/SessionManage"
 import CustomTextField from "../../CustomFields/CustomTextField/CustomTextField";
 import CustomPasswordField from "../../CustomFields/CustomPasswordField/CustomPasswordField";
 import PrimaryButton from "../../CustomFields/PrimaryButton/PrimaryButton";
 
 import "./LoginForm.css";
 import Service from "../../../../services/Service";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [form, setForm] = useState({
@@ -20,6 +21,7 @@ const LoginForm = () => {
     password: "",
     //rememberMe: false,
   });
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
     const { name, value, checked, type } = e.target;
@@ -39,9 +41,15 @@ const LoginForm = () => {
       Password: form.password,
     };
     try {
-      const res = Service.login('Auth/login',request)
+      const res = Service.login('Auth/login', request)
         .then(res => {
-          console.log(res)
+          console.log(res,res.data.refreshToken)
+          //SessionManage.setUserId()
+          debugger
+          SessionManage.setTokenId(res.data.accessToken);
+          SessionManage.setRefreshToken(res.data.refreshToken);
+
+          navigate('/admin')
         })
     } catch (err) {
       console.error(err, ' : Error')

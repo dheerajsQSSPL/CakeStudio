@@ -11,14 +11,14 @@ class SessionManage {
         sessionStorage.setItem('token', value);
     }
     getTokenId() {
-        sessionStorage.getItem('token')
+        return sessionStorage.getItem('token')
     }
 
     async setRefreshToken(value) {
         sessionStorage.setItem('atoken', value);
     }
     getRefreshToken() {
-        sessionStorage.getItem('atoken')
+        return sessionStorage.getItem('atoken')
     }
 
     clearSession() {

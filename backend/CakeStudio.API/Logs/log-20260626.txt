@@ -77,3 +77,270 @@ VALUES (@p0, @p1, @p2, @p3);
 2026-06-26 11:32:01.258 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API) in 3851.1461ms
 2026-06-26 11:32:01.262 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Login (CakeStudio.API)'
 2026-06-26 11:32:01.280 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/login - 200 null application/json; charset=utf-8 4181.0274ms
+2026-06-26 12:51:17.219 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:51:17.240 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:51:17.250 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 30.6796ms
+2026-06-26 12:51:17.255 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:51:17.274 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:51:17.284 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:51:17.307 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:51:36.526 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 12:51:37.227 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 12:51:37.229 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 12:51:37.310 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 12:51:37.312 +05:30 [INF] Hosting environment: Development
+2026-06-26 12:51:37.315 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 12:51:37.999 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 12:51:38.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 631.331ms
+2026-06-26 12:51:38.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-26 12:51:38.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-26 12:51:38.671 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 30.1734ms
+2026-06-26 12:51:38.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-26 12:51:38.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 132.9735ms
+2026-06-26 12:51:38.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.175ms
+2026-06-26 12:51:38.999 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-26 12:51:39.055 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.8374ms
+2026-06-26 12:51:44.153 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:51:44.173 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:51:44.181 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 27.5722ms
+2026-06-26 12:51:44.186 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:51:44.207 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:51:44.404 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:51:44.458 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:51:46.693 +05:30 [INF] Executed DbCommand (113ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 12:51:46.846 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 12:51:46.858 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 2389.5123ms
+2026-06-26 12:51:46.861 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:51:46.873 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 2686.3554ms
+2026-06-26 12:52:19.658 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:52:19.679 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:52:19.682 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 24.5608ms
+2026-06-26 12:52:19.686 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:52:19.704 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:52:19.713 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:52:19.723 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:52:19.822 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 12:52:19.831 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 12:52:19.838 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 107.2093ms
+2026-06-26 12:52:19.844 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:52:19.850 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 164.0195ms
+2026-06-26 12:52:32.354 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:52:32.366 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:52:32.369 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 15.6393ms
+2026-06-26 12:52:32.374 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:52:32.392 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:52:32.398 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:52:32.401 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:52:47.760 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 12:52:48.068 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 12:52:48.074 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 12:52:48.223 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 12:52:48.225 +05:30 [INF] Hosting environment: Development
+2026-06-26 12:52:48.227 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 12:52:48.362 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:52:48.492 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:52:48.669 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:52:48.693 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:52:48.796 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 12:53:04.676 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 12:53:04.977 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 12:53:04.980 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 12:53:05.047 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 12:53:05.050 +05:30 [INF] Hosting environment: Development
+2026-06-26 12:53:05.051 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 12:53:05.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 12:53:06.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 343.386ms
+2026-06-26 12:53:06.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-26 12:53:06.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-26 12:53:06.098 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 12.751ms
+2026-06-26 12:53:06.122 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-26 12:53:06.133 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 48.418ms
+2026-06-26 12:53:06.228 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.4497ms
+2026-06-26 12:53:06.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-26 12:53:06.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.3657ms
+2026-06-26 12:53:34.019 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:53:34.041 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:53:34.049 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 30.3858ms
+2026-06-26 12:53:34.055 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 79
+2026-06-26 12:53:34.078 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:53:34.225 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:53:34.262 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:54:57.022 +05:30 [INF] User profile is available. Using 'C:\Users\dheer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-26 12:54:57.446 +05:30 [INF] Now listening on: https://localhost:7120
+2026-06-26 12:54:57.448 +05:30 [INF] Now listening on: http://localhost:5004
+2026-06-26 12:54:57.550 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-26 12:54:57.552 +05:30 [INF] Hosting environment: Development
+2026-06-26 12:54:57.554 +05:30 [INF] Content root path: C:\CakeStudio\backend\CakeStudio.API
+2026-06-26 12:54:58.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-06-26 12:54:58.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 534.9888ms
+2026-06-26 12:54:58.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.js - null null
+2026-06-26 12:54:58.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-26 12:54:58.645 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-06-26 12:54:58.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.js - 200 null application/javascript;charset=utf-8 28.2597ms
+2026-06-26 12:54:58.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 196.5278ms
+2026-06-26 12:54:58.836 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 221.5927ms
+2026-06-26 12:54:59.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-06-26 12:54:59.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.0404ms
+2026-06-26 12:55:00.805 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:55:00.823 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:55:00.830 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 25.0175ms
+2026-06-26 12:55:00.835 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 97
+2026-06-26 12:55:00.855 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:55:01.123 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:55:01.183 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:55:04.041 +05:30 [INF] Executed DbCommand (130ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 12:55:04.189 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 12:55:04.197 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 3003.9824ms
+2026-06-26 12:55:04.200 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:55:04.212 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 3376.9091ms
+2026-06-26 12:55:20.769 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:55:20.777 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:55:20.780 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 10.5639ms
+2026-06-26 12:55:20.782 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 97
+2026-06-26 12:55:20.796 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:55:20.799 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:55:20.803 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:55:25.798 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 12:55:25.807 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 12:55:25.811 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 5000.6716ms
+2026-06-26 12:55:25.816 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:55:25.820 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 5038.1831ms
+2026-06-26 12:56:41.043 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 12:56:41.052 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:56:41.055 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 12.1128ms
+2026-06-26 12:56:41.059 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 95
+2026-06-26 12:56:41.079 +05:30 [INF] CORS policy execution successful.
+2026-06-26 12:56:41.092 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:56:41.100 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 12:56:47.198 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 12:56:57.590 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 255), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastName], [PasswordHash], [PhoneNumber], [Role], [UpdatedAt])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-06-26 12:57:02.597 +05:30 [INF] User dheerudheerajs8601@gmail.com registered successfully
+2026-06-26 12:57:14.607 +05:30 [INF] Executing OkObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 12:57:14.613 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 33503.0015ms
+2026-06-26 12:57:14.621 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 12:57:14.626 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 200 null application/json; charset=utf-8 33566.9622ms
+2026-06-26 13:03:12.026 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:03:12.094 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:03:12.098 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 71.9367ms
+2026-06-26 13:03:12.103 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 95
+2026-06-26 13:03:12.125 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:03:12.130 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:03:12.136 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:03:12.208 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:03:12.216 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:03:12.221 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 77.7186ms
+2026-06-26 13:03:12.226 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:03:12.230 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 127.85ms
+2026-06-26 13:24:27.175 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:24:27.196 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:24:27.199 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 23.9403ms
+2026-06-26 13:24:27.203 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:24:27.220 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:24:27.223 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:24:27.229 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:24:27.349 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:24:27.354 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:24:27.358 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 123.0502ms
+2026-06-26 13:24:27.363 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:24:27.366 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 163.9283ms
+2026-06-26 13:24:59.658 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:24:59.666 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:24:59.669 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 14.0825ms
+2026-06-26 13:24:59.682 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:24:59.698 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:24:59.699 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:24:59.701 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:24:59.705 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:24:59.709 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:24:59.713 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 10.1927ms
+2026-06-26 13:24:59.719 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:24:59.725 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 42.7248ms
+2026-06-26 13:28:26.769 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:28:26.790 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:28:26.793 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 24.6638ms
+2026-06-26 13:28:26.798 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:28:26.815 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:28:26.819 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:28:26.823 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:28:26.868 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:28:26.874 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:28:26.877 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 49.2915ms
+2026-06-26 13:28:26.883 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:28:26.887 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 89.4062ms
+2026-06-26 13:31:05.566 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:31:05.584 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:31:05.586 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 19.7389ms
+2026-06-26 13:31:05.587 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:31:05.602 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:31:05.604 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:31:05.608 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:31:05.633 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:31:05.642 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:31:05.647 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 33.5059ms
+2026-06-26 13:31:05.653 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:31:05.658 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 70.6593ms
+2026-06-26 13:31:50.727 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:31:50.752 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:31:50.756 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 29.3079ms
+2026-06-26 13:31:50.758 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:31:50.771 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:31:50.773 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:31:50.775 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:31:50.797 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:31:50.811 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:31:50.820 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 39.3321ms
+2026-06-26 13:31:50.826 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:31:50.830 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 71.889ms
+2026-06-26 13:33:51.929 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - null null
+2026-06-26 13:33:51.943 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:33:51.948 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7120/api/Auth/register - 204 null null 47.0519ms
+2026-06-26 13:33:52.008 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7120/api/Auth/register - application/json 96
+2026-06-26 13:33:52.044 +05:30 [INF] CORS policy execution successful.
+2026-06-26 13:33:52.050 +05:30 [INF] Executing endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:33:52.056 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CakeStudio.Application.DTOs.Auth.RegisterRequestDto) on controller CakeStudio.API.Controllers.AuthController (CakeStudio.API).
+2026-06-26 13:33:52.097 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-06-26 13:33:52.104 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'CakeStudio.Application.DTOs.Auth.RegisterResponseDto'.
+2026-06-26 13:33:52.110 +05:30 [INF] Executed action CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API) in 45.7419ms
+2026-06-26 13:33:52.115 +05:30 [INF] Executed endpoint 'CakeStudio.API.Controllers.AuthController.Register (CakeStudio.API)'
+2026-06-26 13:33:52.119 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7120/api/Auth/register - 400 null application/json; charset=utf-8 111.0084ms
