@@ -103,7 +103,12 @@ public partial class CakeStudioDbContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PK__Categori__3214EC0732CBF753");
 
+            entity.Property(e => e.CreatedDate).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.IsActive).HasDefaultValue(true);
+
+            entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.CategoryCreatedByNavigations).HasConstraintName("FK_Categories_CreatedBy_Users");
+
+            entity.HasOne(d => d.ModifiedByNavigation).WithMany(p => p.CategoryModifiedByNavigations).HasConstraintName("FK_Categories_ModifiedBy_Users");
         });
 
         modelBuilder.Entity<InventoryTransaction>(entity =>

@@ -39,6 +39,12 @@ public partial class User
 
     public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();
 
+    [InverseProperty("CreatedByNavigation")]
+    public virtual ICollection<Category> CategoryCreatedByNavigations { get; set; } = new List<Category>();
+
+    [InverseProperty("ModifiedByNavigation")]
+    public virtual ICollection<Category> CategoryModifiedByNavigations { get; set; } = new List<Category>();
+
     public virtual ICollection<InventoryTransaction> InventoryTransactions { get; set; } = new List<InventoryTransaction>();
 
     public virtual ICollection<Cake> Cakes { get; set; } = new List<Cake>();

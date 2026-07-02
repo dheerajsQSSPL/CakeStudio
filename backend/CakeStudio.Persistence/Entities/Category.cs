@@ -18,6 +18,21 @@ public partial class Category
     public string? Description { get; set; }
 
     public bool IsActive { get; set; }
+    [StringLength(500)]
+    public string? ImageUrl { get; set; }
+
+    public DateTime CreatedDate { get; set; }
+
+    public int? CreatedBy { get; set; }
+
+    public DateTime? ModifiedDate { get; set; }
+
+    public int? ModifiedBy { get; set; }
 
     public virtual ICollection<Cake> Cakes { get; set; } = new List<Cake>();
+    [ForeignKey("CreatedBy")]
+    public virtual User? CreatedByNavigation { get; set; }
+
+    [ForeignKey("ModifiedBy")]
+    public virtual User? ModifiedByNavigation { get; set; }
 }

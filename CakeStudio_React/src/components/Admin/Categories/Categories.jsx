@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import CategoryHeader from "./CategoryHeader";
 import CategoryFilters from "./CategoryFilters";
@@ -9,42 +9,13 @@ import AddEditCategoryDialog from "./AddEditCategoryDialog";
 import DeleteCategoryDialog from "./DeleteCategoryDialog";
 
 import "./Categories.css";
+import Service from "../../../services/Service";
+import SessionManage from "../../../Session/SessionManage";
 
 export default function Categories() {
 
-    const [categories, setCategories] = useState([
+    const [categories, setCategories] = useState([]);
 
-        {
-            id: 1,
-            name: "Chocolate",
-            description: "Rich and creamy chocolate cakes.",
-            image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200",
-            products: 18,
-            status: "Active",
-            createdOn: "12 Jun 2026"
-        },
-
-        {
-            id: 2,
-            name: "Red Velvet",
-            description: "Premium red velvet cakes.",
-            image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=200",
-            products: 9,
-            status: "Active",
-            createdOn: "18 Jun 2026"
-        },
-
-        {
-            id: 3,
-            name: "Fruit Cakes",
-            description: "Fresh fruit based cakes.",
-            image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=200",
-            products: 6,
-            status: "Inactive",
-            createdOn: "20 Jun 2026"
-        }
-
-    ]);
 
     const [search, setSearch] = useState("");
 
@@ -56,21 +27,45 @@ export default function Categories() {
 
     const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
 
-    const filteredCategories = categories.filter(category => {
 
-        const searchMatch =
 
-            category.name.toLowerCase().includes(search.toLowerCase());
+    useEffect(() => {
+        loadCategories();
+    }, [search, status]);
 
-        const statusMatch =
+    const loadCategories = async () => {
+        try {
+            const params = {
+                page: 1,
+                pageSize: 10,
+                search: search,
+                isActive:
+                    status === "All"
+                        ? null
+                        : status === "Active"
+            };
+            const response = await Service.getCategoriesWithFilters(params);
 
-            status === "All" ||
+            const data = response.data.data.map(item => ({
+                id: item.id,
+                name: item.categoryName,
+                description: item.description,
+                image: item.imageUrl,
+                status: item.isActive ? "Active" : "Inactive",
+                createdOn: new Date(item.createdOn).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric"
+                })
+            }));
 
-            category.status === status;
-
-        return searchMatch && statusMatch;
-
-    });
+            setCategories(data);
+            console.log(data[0].image)
+        }
+        catch (error) {
+            console.error(error);
+        }
+    };
 
     const handleAdd = () => {
 
@@ -81,7 +76,7 @@ export default function Categories() {
     };
 
     const handleEdit = (category) => {
-
+        console.log(category, "ppp 1")
         setSelectedCategory(category);
 
         setOpenDialog(true);
@@ -89,12 +84,33 @@ export default function Categories() {
     };
 
     const handleDelete = (category) => {
-
+        console.log(category, "ppp 1")
         setSelectedCategory(category);
-
         setOpenDeleteDialog(true);
-
     };
+
+    const SaveHandler = async (category) => {
+        if (category.id !== null && category.id !== 0 && selectedCategory !== null) {
+            const formdata = new FormData();
+            formdata.append('Id', selectedCategory.id)
+            formdata.append('CategoryName', category.name)
+            formdata.append('Description', category.description)
+            formdata.append('isActive', category.status === "Active" ? true : false)
+            formdata.append('imageUrl', category.imageUrl)
+
+            await Service.updateCategory(formdata);
+
+        } else {
+            const formdata = new FormData();
+            formdata.append('CategoryName', category.name)
+            formdata.append('Description', category.description)
+            formdata.append('isActive', category.status === "Active" ? true : false)
+            formdata.append('imageFile', category.image)
+
+            await Service.createCategory(formdata);
+        }
+        await loadCategories()
+    }
 
     return (
 
@@ -120,7 +136,7 @@ export default function Categories() {
 
             {
 
-                filteredCategories.length === 0 ?
+                categories.length === 0 ?
 
                     <EmptyCategories />
 
@@ -128,7 +144,7 @@ export default function Categories() {
 
                     <CategoryTable
 
-                        categories={filteredCategories}
+                        categories={categories}
 
                         onEdit={handleEdit}
 
@@ -148,7 +164,7 @@ export default function Categories() {
 
                 onSave={(category) => {
 
-                    console.log(category);
+                    SaveHandler(category);
 
                 }}
 
@@ -162,10 +178,10 @@ export default function Categories() {
 
                 onClose={() => setOpenDeleteDialog(false)}
 
-                onConfirm={() => {
-
-                    console.log(selectedCategory);
-
+                onConfirm={async () => {
+                    await Service.deleteCategory(selectedCategory.id);
+                    setOpenDeleteDialog(false);
+                    loadCategories();
                 }}
 
             />

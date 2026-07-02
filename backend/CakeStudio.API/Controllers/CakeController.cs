@@ -7,7 +7,7 @@ using Stripe;
 namespace CakeStudio.API.Controllers
 {
     [ApiController]
-    [Route("api/cakes")]
+    [Route("api/[controller]")]
     public class CakeController : ControllerBase
     {
         private readonly ICakeService _cakeService;

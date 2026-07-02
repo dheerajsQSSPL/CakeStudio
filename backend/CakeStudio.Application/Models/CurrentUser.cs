@@ -8,6 +8,8 @@ namespace CakeStudio.Application.Models
 {
     public class CurrentUser
     {
+        public int? userId;
+
         public int UserId { get; set; }
 
         public string Email { get; set; } = string.Empty;
